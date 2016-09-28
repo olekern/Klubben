@@ -1,0 +1,212 @@
+<!doctype html>
+<!-- Registrering -->
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Klubben | Velg klubb</title>
+    <meta name="description" content="My Parse App">
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/clubStyle.css" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <div class="imac">
+        <img src="./img/imac.png" alt="Image not found. Check internet connection.">
+    </div>
+
+    <img class="klubbFor" src="./img/ball.png">
+        
+    <div class="klubb" id="benefits1">
+        <div class="klubbValg">
+             <h3>Velg lag:</h3>
+            <div class="posts">
+                <ul id="list-posts">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        Parse.initialize("wSHRpQQxW6jgmxRQV8UXogZcOiRvO8s8VoVmlMYI", "imVCWFzFX4fVRGcqX8ioidD686IPb5ELzHd3WkJw");
+
+        function checkLogin() {
+            if (Parse.User.current) {
+                $("#brukernavn").html(Parse.User.current().get("name"));
+            } else {
+                $("#brukernavn").html("");
+                location.href = "../pages/parsee.html";
+            }
+        }
+
+        var currentUser = Parse.User.current();
+
+        function logOut() {
+            Parse.User.logOut(
+                console.log("Logger ut"));
+
+        }
+    </script>
+
+    <script type="text/javascript">
+        Parse.initialize("wSHRpQQxW6jgmxRQV8UXogZcOiRvO8s8VoVmlMYI", "imVCWFzFX4fVRGcqX8ioidD686IPb5ELzHd3WkJw");
+        
+
+        function chooseClub0() {
+
+            var utvikler = "umCaWls7lR";
+            var Club = Parse.Object.extend("data_" + utvikler + "_Members");
+
+            console.log("heisann");
+
+            var currentUser = Parse.User.current();
+            var bruker = Parse.User.current().id;
+            console.log(currentUser);
+            console.log(bruker);
+            
+            var club = new Club();
+            club.set("user", currentUser)
+            club.set("accepted", false);
+            
+            club.save(null, {
+                            success: function(club) {
+                                console.log("Fantastisk");
+                                location.href = "../pages/feed.html";
+                            },
+                            error: function(club, error) {
+                                console.log("Error:" + error.message);
+                            }
+                        });
+
+        }
+
+
+        function chooseClub1() {
+            var ullernJ = "dgrxgGwOLw";
+            var Club1 = Parse.Object.extend("Members");
+
+            console.log("heisann");
+
+            var currentUser = Parse.User.current();
+            var bruker = Parse.User.current().id;
+            console.log(currentUser);
+            console.log(bruker);
+            console.log(klubbID)
+            
+            var club = new Club1();
+            club.set("user", currentUser)
+            club.set("accepted", false);
+            
+            club.save(null, {
+                            success: function(club) {
+                                console.log("Fantastisk");
+                                location.href = "../pages/feed.html";
+                            },
+                            error: function(club, error) {
+                                console.log("Error:" + error.message);
+                            }
+                        });
+        }
+
+        function chooseClub2() {
+            var ullernA = "LcjFbIuRpx";
+            var Club = Parse.Object.extend("data_" + ullernA + "_Members");
+
+            console.log("heisann");
+
+            var currentUser = Parse.User.current();
+            var bruker = Parse.User.current().id;
+            console.log(currentUser);
+            console.log(bruker);
+            
+            var club = new Club();
+            club.set("user", currentUser)
+            club.set("accepted", false);
+            
+            club.save(null, {
+                            success: function(club) {
+                                console.log("Fantastisk");
+                                location.href = "../pages/feed.html";
+                            },
+                            error: function(club, error) {
+                                console.log("Error:" + error.message);
+                            }
+                        });
+        }
+
+        function chooseClub3() {
+            var ullern02 = "aryOYor35o";
+            var Club = Parse.Object.extend("data_" + ullern02 + "_Members");
+
+            console.log("heisann");
+
+            var currentUser = Parse.User.current();
+            var bruker = Parse.User.current().id;
+            console.log(currentUser);
+            console.log(bruker);
+            
+            var club = new Club();
+            club.set("user", currentUser)
+            club.set("accepted", false);
+            
+            club.save(null, {
+                            success: function(club) {
+                                console.log("Fantastisk");
+                                location.href = "../pages/feed.html";
+                            },
+                            error: function(club, error) {
+                                console.log("Error:" + error.message);
+                            }
+                        });
+        }
+
+        var Teams = Parse.Object.extend("Teams");
+
+        function getTeams() {
+            var query = new Parse.Query(Teams);
+            query.find({
+
+                    success: function(results) {
+                        var output = "";
+                        for (var i in results) {
+                            var teams = results[i].get("Name");
+                            console.log(teams);
+                            var funksjon = "chooseClub" + i + "();";
+
+                            output += "<div id=\"lagVelg\">";
+                            output += "<h4>" + teams + "</h4>";
+                            output += '<button name="submit" id="forespor" type="button" onclick=' + '"' + funksjon + '"' + '>Forespør medlemskap</button>';
+                            output += "</div>";
+                        }
+                        $("#list-posts").html(output);
+                    },
+                    error: function(error) {
+                        output += "<div id =\"lagvelg\">";
+                        output += "<h4>" + "Du er allerede med i en klubb" + "</h4>";
+                        output += "</div>";
+                        console.log("Query error:" + error.message);
+                    }
+                });
+        }
+
+
+        getTeams();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+ .nav{ 
+    height: 5em;
+    background: #e05038;
+    width: 100%;
+   
+}
+.nav ul {
+    margin:0;
+
+}
+.nav ul li {
+    list-style:none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    float: right;
+    display: block;
+    padding: 1.75em 2em;
+    color: white;
+}
+.nav ul li a:hover {
+    background-color:#c94832;
+    height: 1.5em;
+}
+
+.nav ul li1 a img {
+    float: left;
+    width: 10em;
+    height: auto;
+    margin-left: 7em;
+    margin-top: -2em;
+    z-index: 2;
+}
+
+.menny {
+    height: 3em;
+    background: grey;
+    width: 26.17em;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.menny ul {
+    padding:0;
+}
+.menny ul li {
+    list-style:none;
+}
+
+.menny ul li a {
+    text-decoration: none;
+    float: left;
+    display: block;
+    padding: 1em 4.92em;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menny ul li a:hover {
+    background-color:#c94832;
+    height: 1em;
+}
+
+#chart1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85em;
+    height: 20em;
+}
+#chart2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85em;
+    height: 20em;
+}
+#chart3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85em;
+    height: 20em;
+}
+#chart4{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85em;
+    height: 20em;
+}
+#chart5{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85em;
+    height: 20em;
+}
+#chart6{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85em;
+    height: 20em;
+}
+
+.ct-labels span {
+  color: black;
+}
+
+h1{
+    font-size: 25px;
+    font-family:  Helvetica Neue, Trebuchet MS, Verdana;
+    font-weight: lighter;
+    text-align: center;
+    
+}
+h2{
+    font-size: 18px;
+    font-family:  Helvetica Neue, Trebuchet MS, Verdana;
+    font-weight: normal;
+    text-align: center;
+    
+}
+
+.newboxes {
+    border: 0 solid; 
+   display: block;
+}
+
+.rapporter {
+    height: 2em;
+    background: #c94832;
+    width: 21em;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.rapporter ul {
+    padding:0;
+}
+.rapporter ul li {
+    list-style:none;
+    
+}
+
+.rapporter ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 0.5em 3em;
+    color: white;
+    width: 1em;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rapporter ul li a:hover {
+    background-color:#e05038;
+    height: 1em;
+}
+
+#feedBack {
+    background-color: white;
+    width: 25em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}

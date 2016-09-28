@@ -1,0 +1,280 @@
+html{
+    height: 500%;
+    background-color: #EDEDED;
+}
+.nav {
+    
+    height: 5em;
+    background: #cf2424;
+    width: 100%;
+   
+}
+.nav ul {
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    margin-right: 3em;
+}
+.nav ul li {
+    list-style:none;
+}
+
+
+.nav ul li a {
+    text-decoration: none;
+    float: right;
+    display: block;
+    padding: 2.1em 1.5em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.nav ul li p {
+    text-decoration: none;
+    float: right;
+    display: block;
+    padding: 1.05em 1.5em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.nav ul li a:hover {
+    color: lightgrey;
+}
+
+.navn{
+    text-decoration: none;
+    float: left;
+    display: block;
+    padding: 1.1em;
+    margin-left: 5em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 25px;
+    letter-spacing: 1px;
+    
+}
+
+#signOut{
+    font-size: 23px;
+    margin-top: -0.8em; }
+
+#side-menu{
+    width: 20em;
+    float: left;
+    margin-left: -17em;
+    margin-top: 3em;
+    height: 40em;
+    background-color: white;
+    border: 1px solid #d5d5d5;
+}
+
+#profile{
+    height: 10.7em;
+    background-color: #cf2424;
+    border: 1px solid #d5d5d5;
+}
+
+#profile img{
+    width: 7em;
+    height: auto;
+    float: left;
+    margin-left: -2em;
+}
+
+#brukernavn{
+    text-align: center; 
+    font-weight: 600;
+    font-size: 17;
+    margin-top: 2.5em;
+    color: white;
+}
+#userRole {
+    display: block;
+    text-align: center;
+    margin-left: -2.5em;
+    font-weight: 600;
+    font-size: 17;
+    color: white;
+}
+
+#list-role p:first-letter{
+    text-transform: uppercase;
+}
+
+#changePB{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 3.5em;
+    margin-left: 1em;
+}
+
+#pb-file{
+   float: right; 
+   margin-right: -4.5em;
+   margin-top: -2.5em;
+}
+
+.posts {
+    word-wrap: break-word;
+    border-color: #C2C2C2;
+}
+
+.posts img {
+    width: 20em;
+    height: auto;
+}
+
+
+.form{
+    background-color: white;
+    width: 40.2em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    border: 1px solid #d5d5d5;
+    height: 10.7em;
+}
+form {
+    margin-bottom: 5em;
+}
+
+#list-pb img{
+    height: 5em;
+    margin-left: -0.5em;
+    margin-top: 1em;
+    width: auto;
+}
+
+
+.form textarea{
+    font-family: Microsoft Sans Serif, Verdana;
+    font-weight: 500;
+    overflow: auto;
+    border: none;
+    resize: none;
+    margin-left: 8em;
+    top: -6.3em;
+    position: relative;
+
+}
+
+#post-file{
+    margin-left: 3em;
+    position: relative;
+    top: 1em;
+}
+
+.imageInput::before{
+    content: "\f0c0";
+    position: absolute;
+    font-family: "FontAwesome";
+    font-size: 25px;
+    color: #222E3C;
+    margin-left: 40em;
+    
+}
+
+#postIcon{
+    font-size: 5em;
+}
+
+.form button{
+    float: right;
+    margin-right: 2em;
+    margin-top: 0.4em;
+    padding: 6px 8px;
+    color: #fff;
+    border: none;
+    background-color: #2ECC71;
+    border-bottom: 4px solid #27AE60;
+    font-size: 12px;
+    font-weight: 600;
+    display: block;
+    cursor: pointer;
+}
+
+#tekstboks{
+    height: 7em;
+    width: 40.2em;
+    border-bottom: 1px solid #C2C2C2;
+}
+
+#list-posts {
+    width: 38.2em;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: #C2C2C2;
+    background-color: #EDEDED;
+}
+
+
+
+#feedCell{
+    padding: 2em;
+    margin-left: -2.2em;
+    background-color: white;
+    margin-bottom: 1em;
+    background-color: white;
+    border: 1px solid #d5d5d5;
+}
+
+#feedCell h4{
+    margin-left: 6.7em;
+    margin-top: -4em;
+    margin-bottom: 4em;
+    font-size: 17px;
+}
+
+#feedCell h5{
+    margin-left: 7.7em;
+    margin-top: -4em;
+    margin-bottom: 4em;
+    font-weight: 500;
+    color: grey;
+    font-size: 15px;
+}
+
+#profilBilde img{
+    width: 5em;
+    height: auto;
+}
+
+#request{
+    width: 15em;
+    float: right;
+    background-color: #34495e;
+    margin-top: 3em;
+    margin-right: 3em;
+}
+
+#request-heading{
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 2em ;
+}
+
+#all-requests{
+    float: right;
+    height: 5em;
+    width: 15em;
+}
+
+#all-requests p{
+    color: white;
+}
+
+
+
+
+
+
+
