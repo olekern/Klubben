@@ -30,9 +30,11 @@
                         <a href="registration.html" class="fa fa-sign-out" id="signOut" aria-hidden="true" onclick="logOut()"></a>
 
                     </div>
-                     <a href="../pages/reports.html" id="velvaere">Forberedelser</a>
-                     <a href="../pages/reports.html" id="trening">Evaluering</a>
-                     <a href="../stats.html" id="statistikk">Statistikk</a>
+                     <a href="../pages/reports.html" id="forberedelser">Forberedelser</a>
+                     <a href="../pages/reports.html" id="evaluering">Evaluering</a>
+                    <a href="../pages/reports.html" id="forberedelserT">Forberedelser</a>
+                     <a href="../pages/reports.html" id="evalueringT">Evaluering</a>
+                    <a href="../pages/reports.html" id="søndag">Søndagsrapport</a>
                 </li>
 
             </ul>
@@ -112,10 +114,12 @@
                             if (role == "admin") {
 
                             } else if (role == "trener") {
-                                document.getElementById("trening").remove();
-                                document.getElementById("velvaere").remove();
+                                document.getElementById("forberedelser").remove();
+                                document.getElementById("evaluering").remove();
                             } else {
-                                document.getElementById("statistikk").remove();
+                                document.getElementById("forberedelserT").remove();
+                                document.getElementById("evalueringT").remove();
+                                document.getElementById("søndag").remove();
                             }
 
                             if ((role == "admin") || (role == "trener")) {
