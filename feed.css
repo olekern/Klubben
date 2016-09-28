@@ -59,7 +59,7 @@ html{
     float: left;
     display: block;
     padding: 1.1em;
-    margin-left: 1em;
+    margin-left: 0.5em;
     color: white;
     text-transform: uppercase;
     font-weight: 900;
@@ -75,7 +75,7 @@ html{
 #side-menu{
     width: 20em;
     float: left;
-    margin-left: -20em;
+    margin-left: -21em;
     margin-top: 3em;
     height: 40em;
     background-color: white;
