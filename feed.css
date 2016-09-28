@@ -9,6 +9,14 @@ html{
     width: 100%;
    
 }
+
+.nav img{
+    height: 4em;
+    width: auto;
+    float: left;
+    margin-left: 6em;
+    margin-top: 0.5em;
+}
 .nav ul {
     margin:0;
     padding:0;
