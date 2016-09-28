@@ -49,7 +49,7 @@
                 $("#brukernavn").html(Parse.User.current().get("name"));
             } else {
                 $("#brukernavn").html("");
-                location.href = "../pages/parsee.html";
+                location.href = "registration.html";
             }
         }
 
@@ -85,7 +85,7 @@
             club.save(null, {
                             success: function(club) {
                                 console.log("Fantastisk");
-                                location.href = "../pages/feed.html";
+                                location.href = "newsFeed.html";
                             },
                             error: function(club, error) {
                                 console.log("Error:" + error.message);
@@ -114,7 +114,7 @@
             club.save(null, {
                             success: function(club) {
                                 console.log("Fantastisk");
-                                location.href = "../pages/feed.html";
+                                location.href = "newsFeed.html";
                             },
                             error: function(club, error) {
                                 console.log("Error:" + error.message);
@@ -140,7 +140,7 @@
             club.save(null, {
                             success: function(club) {
                                 console.log("Fantastisk");
-                                location.href = "../pages/feed.html";
+                                location.href = "newsFeed.html";
                             },
                             error: function(club, error) {
                                 console.log("Error:" + error.message);
@@ -166,7 +166,7 @@
             club.save(null, {
                             success: function(club) {
                                 console.log("Fantastisk");
-                                location.href = "../pages/feed.html";
+                                location.href = "newsFeed.html";
                             },
                             error: function(club, error) {
                                 console.log("Error:" + error.message);
