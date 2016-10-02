@@ -21,7 +21,7 @@
 
 </head>
 
-<body>
+<body OnLoad="document.login.username.focus();">
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
     <div class="imac">
@@ -32,16 +32,21 @@
     <div class="logForm">
 
         <div class="innlogging">
-            <img src="./img/ball.png">
+            <img src="../img/ball.png">
             <form name="login" action="#">
                 <div class="form-input">
-                <input type="text" name="username" placeholder="Mail"/>
+                <input type="text" name="username" placeholder="Mail" onkeydown = "if (event.keyCode == 13)
+                        document.login.password.focus();"/>
                 </div>
                 <div class="pass">
-                <input type="password" name="password" placeholder="Passord"/>
+                <input type="password" name="password" placeholder="Passord" onkeydown = "if (event.keyCode == 13)
+                        document.getElementById('btnSearch').click()"  />
                 </div>
-                <button name="submit" type="button" onclick="logIn()" class="btn">Logg inn</button>
-                <div id="opener"><a href="#1" name="1" onclick="return show();">Registrer deg her</a>
+                <button name="submit" id="btnSearch" type="button" onclick="logIn()" class="btn" >Logg inn</button>
+                <div id="list-error">
+                </div>
+                <div id="opener"><a href="#1" name="1" onclick="return show();">Registrer deg her</a></div>
+            </form>
         </div>
             </form>
         </div>
@@ -66,15 +71,18 @@
             <div class="registrering">
         <form name="signup" action="#">
             <div class="name">
-                <input type="text" name="username" placeholder="Fullt navn" />
+                <input type="text" name="username" placeholder="Fullt navn" style="text-transform: capitalize;" onkeydown = "if (event.keyCode == 13)
+                        document.signup.mail.focus();" />
             </div>
             <div class="mail">
-                <input type="text" name="mail" placeholder="Mail"/>
+                <input type="text" name="mail" placeholder="Mail" onkeydown = "if (event.keyCode == 13)
+                        document.signup.password.focus();"/>
             </div>
             <div class="passord">
-                <input type="password" name="password" placeholder="Passord"/>
+                <input type="password" name="password" placeholder="Passord" onkeydown = "if (event.keyCode == 13)
+                        document.getElementById('btnSearchReg').click()"/>
             </div>
-            <button name="submit" type="button" onclick="signUp()" class="btn2">Registrer!</button>
+            <button name="submit" type="button" onclick="signUp()" class="btn2" id="btnSearchReg">Registrer!</button>
         </form>
     </div>
     <div id="upbutton"><a href onclick="return hide();">Avbryt</a></div>
@@ -116,6 +124,7 @@
             var pass = document.login.elements[1].value;
             console.log(name);
             console.log(pass);
+            var loginError = "";
 
             Parse.User.logIn(name, pass, {
                     success: function() {
@@ -124,6 +133,8 @@
                     },
                     error: function() {
                         console.log("Innlogging feilet:" + error.message);
+                        loginError += '<p>Ser ut til at enten brukernavn eller passord er skrevet feil</p>'
+                        $("#list-error").html(loginError);
                     }
                 })
             return false;
