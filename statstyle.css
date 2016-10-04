@@ -1,155 +1,135 @@
-
-html, body{
+html, body {
     height: 100%;
     width: 100%;
 }
- .nav{ 
+.nav {
     height: 5em;
-    background: #e05038;
+    background: #cf2424;
     width: 100%;
-   
 }
 .nav ul {
     margin:0;
-
+    padding:0;
+    overflow: hidden;
+    margin-right: 7em;
 }
 .nav ul li {
     list-style:none;
 }
-
+.navn {
+    text-decoration: none;
+    float: left;
+    display: block;
+    padding: 1.1em;
+    margin-left: 5em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
 .nav ul li a {
     text-decoration: none;
     float: right;
     display: block;
-    padding: 1.75em 2em;
+    padding: 2.1em 1.5em;
     color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.nav ul li p {
+    text-decoration: none;
+    float: right;
+    display: block;
+    padding: 1.05em 1.5em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 15px;
+    letter-spacing: 1px;
 }
 .nav ul li a:hover {
-    background-color:#c94832;
-    height: 1.5em;
+    color: lightgrey;
 }
-
-.nav ul li1 a img {
-    float: left;
-    width: 10em;
-    height: auto;
-    margin-left: 7em;
-    margin-top: -2em;
-    z-index: 2;
-}
-
-.menny {
-    height: 3em;
-    background: grey;
-    width: 26.17em;
-    margin-left: auto;
-    margin-right: auto;
-   
-}
-.menny ul {
-    padding:0;
-}
-.menny ul li {
-    list-style:none;
-}
-
-.menny ul li a {
-    text-decoration: none;
-    float: left;
+#chart1 {
     display: block;
-    padding: 1em 4.92em;
-    color: white;
     margin-left: auto;
     margin-right: auto;
+    width: 85em;
+    height: 20em;
+    
 }
-.menny ul li a:hover {
-    background-color:#c94832;
-    height: 1em;
-}
-
-#chart1{
+#chart2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 85em;
     height: 20em;
 }
-#chart2{
+#chart3 {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 85em;
     height: 20em;
 }
-#chart3{
+#chart4 {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 85em;
     height: 20em;
 }
-#chart4{
+#chart5 {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 85em;
     height: 20em;
 }
-#chart5{
+#chart6 {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 85em;
     height: 20em;
 }
-#chart6{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 85em;
-    height: 20em;
-}
-
 .ct-labels span {
-  color: black;
+    color: black;
 }
 
-h1{
+h1 {
     font-size: 25px;
-    font-family:  Helvetica Neue, Trebuchet MS, Verdana;
+    font-family: Microsoft Sans Serif, Verdana;
     font-weight: lighter;
     text-align: center;
-    
 }
-h2{
-    font-size: 18px;
-    font-family:  Helvetica Neue, Trebuchet MS, Verdana;
-    font-weight: normal;
+h2 {
+    font-size: 20px;
+    font-family: Microsoft Sans Serif, Verdana;
+    font-weight: 500;
     text-align: center;
-    
+    margin-top: 3em;
 }
-
 .newboxes {
-    border: 0 solid; 
-   display: block;
+    border: 0 solid;
+    display: block;
 }
-
 .rapporter {
     height: 2em;
     background: #c94832;
     width: 21em;
     margin-left: auto;
     margin-right: auto;
-   
 }
 .rapporter ul {
     padding:0;
 }
 .rapporter ul li {
     list-style:none;
-    
 }
-
 .rapporter ul li a {
     text-decoration: none;
     display: block;
@@ -164,11 +144,19 @@ h2{
     background-color:#e05038;
     height: 1em;
 }
-
 #feedBack {
     background-color: white;
     width: 25em;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
+}
+
+#injury {
+    background-color: white;
+    width: 25em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    
 }
