@@ -32,8 +32,8 @@
                     </div>
                      <a href="reports.html" id="forberedelser">Forberedelser</a>
                      <a href="reports.html" id="evaluering">Evaluering</a>
-                    <a href="forberedelserT.html" id="forberedelserT">ForberedelserT</a>
-                     <a href="evalueringT.html" id="evalueringT">EvalueringT</a>
+                    <a href="forberedelserT.html" id="forberedelserT">Forberedelser</a>
+                     <a href="evalueringT.html" id="evalueringT">Evaluering</a>
                     <a href="sondag.html" id="søndag">Søndagsrapport</a>
                 </li>
 
@@ -41,7 +41,7 @@
 
         </div>
 
-        <div id="side-menu">
+         <div id="side-menu">
 
             <div id="profile">
                 <ul id="profile-pb">
@@ -55,10 +55,37 @@
 
         </div>
 
+        
+        <div class="postClass">
+        
+        <div class="form">
+
+            <form name="post">
+                <div id="tekstboks">
+                    <ul id="list-pb">
+
+                    </ul>
+
+                    <textarea rows="4" cols="44" name="text" placeholder="Skriv ditt innlegg her"></textarea>
+                </div>
+                <input id="post-file" class="imageInput" type="file" />
+                <button name="submit" type="button" onclick="Submit()">Publiser</button>
+            </form>
+        </div>
+
+        <div class="posts">
+            <ul id="list-posts">
+
+            </ul>
+        </div>
+        
+        </div>
+        
         <div id="request">
             <ul id="list-req">
             </ul>
         </div>
+
 
 
         <script type="text/javascript">
@@ -221,27 +248,6 @@
             console.log(klubbID);
             localStorage.setItem("clubId", klubbID);
         </script>
-
-        <div class="form">
-
-            <form name="post">
-                <div id="tekstboks">
-                    <ul id="list-pb">
-
-                    </ul>
-
-                    <textarea rows="4" cols="60" name="text" placeholder="Skriv ditt innlegg her"></textarea>
-                </div>
-                <input id="post-file" class="imageInput" type="file" />
-                <button name="submit" type="button" onclick="Submit()">Publiser</button>
-            </form>
-        </div>
-
-        <div class="posts">
-            <ul id="list-posts">
-
-            </ul>
-        </div>
 
 
         <script type="text/javascript">
@@ -407,10 +413,6 @@
         </script>
 
 
-
-        <div class="footer2">
-            <p>Copyright &copy; Klubben 2016</p>
-        </div>
 
 
     </body>

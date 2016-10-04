@@ -3,31 +3,31 @@ html, body {
     width: 100%;
 }
 .nav {
+    
     height: 5em;
     background: #cf2424;
     width: 100%;
+   
+}
+
+.nav img{
+    height: 4em;
+    width: auto;
+    float: left;
+    margin-left: 6em;
+    margin-top: 0.5em;
 }
 .nav ul {
     margin:0;
     padding:0;
     overflow: hidden;
-    margin-right: 7em;
+    margin-right: 3em;
 }
 .nav ul li {
     list-style:none;
 }
-.navn {
-    text-decoration: none;
-    float: left;
-    display: block;
-    padding: 1.1em;
-    margin-left: 5em;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 25px;
-    letter-spacing: 1px;
-}
+
+
 .nav ul li a {
     text-decoration: none;
     float: right;
