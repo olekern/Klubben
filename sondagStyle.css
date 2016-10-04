@@ -55,37 +55,24 @@ html, body {
     color: lightgrey;
 }
 
-.statNav {
-    height: 3em;
-    background: #cf2424;
-    width: 40em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-}
-.statNav ul {
-    margin:0;
-    padding:0;
-    overflow: hidden;
-}
-.statNav ul li {
-    list-style:none;
-}
-
-.statNav ul li a {
+.navn{
     text-decoration: none;
     float: left;
     display: block;
+    padding: 1.1em;
+    margin-left: 5em;
     color: white;
     text-transform: uppercase;
-    padding: 1em 2.7em;
     font-weight: 900;
-    font-size: 15px;
+    font-size: 25px;
     letter-spacing: 1px;
+    
 }
 
-.statNav ul li a:hover {
-    color: lightgrey;
+#signOut{
+    font-size: 23px;
+    margin-top: -0.8em; 
+    
 }
 
 #chart1 {

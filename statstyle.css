@@ -53,6 +53,27 @@ html, body {
 .nav ul li a:hover {
     color: lightgrey;
 }
+
+.navn{
+    text-decoration: none;
+    float: left;
+    display: block;
+    padding: 1.1em;
+    margin-left: 5em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 25px;
+    letter-spacing: 1px;
+    
+}
+
+#signOut{
+    font-size: 23px;
+    margin-top: -0.8em; 
+    
+}
+
 #chart1 {
     display: block;
     margin-left: auto;
