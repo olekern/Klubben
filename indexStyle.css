@@ -11,22 +11,23 @@ html{
     z-index: 10;
     position: fixed;
     border-bottom: 1px solid #b62929;
+    top: 0;
 }
 
 .nav img{
-    height: 4em;
+    height: 50px;
     width: auto;
     float: left;
-    margin-left: 6em;
-    margin-top: 0.5em;
+    margin-left: 100px;
+    margin-top: 17px;
 }
 
 .navn{
     text-decoration: none;
     float: left;
     display: block;
-    margin-top: 1em;
-    margin-left: 1em;
+    padding: 28px;
+    margin-left: 40px;
     color: white;
     text-transform: uppercase;
     font-weight: 900;
@@ -56,16 +57,35 @@ html{
 
 .first {
     width: 100%;
-    height: 600px;
-    background-color: #cf2424;
+    height: 584px;
 
 }
 
+.first h3{
+    color: white;
+    float: right;
+    margin-top: 100px;
+}
 
-#background img{
-    margin-top: -40px;
+.first img{
     height: auto;
     width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+#box{
+    height: 70px;
+    width: 500px;
+    position: absolute;
+    z-index: 2;
+    margin-left: 200px;
+    margin-top: -420px;
+    }
+    
+#box h1{
+    font-size: 35px;
+    color: white;
 }
 
 .second{
@@ -80,7 +100,7 @@ html{
     position: absolute;
     left: 50%;
     margin-left: -300px;
-    margin-top: 35px;
+    margin-top: 55px;
 }
 #sitat p{
     font-size: 35px;
@@ -94,6 +114,14 @@ html{
     font-weight: 500;
     margin-top: 285px;
     margin-right: 25px;
+}
+
+.content{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: grey;
+    
 }
 
 .third{
@@ -146,7 +174,3 @@ html{
     height: 35em;
     background-color: #255f85;
 }
-
-
-
-
