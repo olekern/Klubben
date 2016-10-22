@@ -87,7 +87,7 @@ h1, h3{
     position: relative;
 }
 
-.register input { 
+#fullname { 
     text-transform: uppercase;
 }
 ::-webkit-input-placeholder { /* WebKit browsers */
