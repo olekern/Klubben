@@ -78,13 +78,12 @@ h1, h3{
 
 .register{
     float: right;
-    margin-right: 30em;
     margin-top: -17.5em;
     background-color: #34495e;
     height: 20em;
     width: 25em;
     z-index: 10;
-    position: absolute;
+    position: relative;
 }
 
 .klubb{
