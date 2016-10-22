@@ -87,6 +87,22 @@ h1, h3{
     position: relative;
 }
 
+.register input { 
+    text-transform: uppercase;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    text-transform: none;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    text-transform: none;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    text-transform: none;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    text-transform: none;
+}
+
 .klubb{
     float: right;
     margin-right: 16em;
