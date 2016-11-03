@@ -159,7 +159,7 @@
 
                             for (var i = 0; i < objects.length; i++) {
                                 var navn = objects[i].get("survey").get("name");
-                                if (navn == "Trening") {
+                                if (navn == "Søndagsrapport") {
                                     var query = new Parse.Query(SurveyAnswer);
                                     query.descending("createdAt");
                                     query.include("author");
