@@ -1,14 +1,12 @@
 html{
-    background-color: #cf2424;
-    font-family: 'Arimo', sans-serif;
-
-
+    font-family: 'Helvetica Neue', sans-serif;
+    width: 100%;
 }
 .nav{
     width: 100%;
     height: 5em;
     background-color: #cf2424;
-    z-index: 10;
+    z-index: 25;
     position: fixed;
     border-bottom: 1px solid #b62929;
     top: 0;
@@ -26,71 +24,128 @@ html{
     text-decoration: none;
     float: left;
     display: block;
-    padding: 28px;
+    padding: 26px;
     margin-left: 40px;
     color: white;
     text-transform: uppercase;
-    font-weight: 900;
     font-size: 25px;
-    letter-spacing: 1px;
+    font-weight: 400;
     
 }
 
 .app{
     text-decoration: none;
-    float: right;
     display: block;
-    margin-top: 1.7em;
-    margin-right: 3em;
     color: white;
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: 18px;
-    letter-spacing: 1px;
     cursor: pointer;
     
+}
+
+#topApp{
+    float: right;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 31px;
+    margin-right: 3em;
 }
 
 .app:hover {
     color: lightgrey;
 }
 
-.first {
+#first {
     width: 100%;
     height: 584px;
-
+    background-image: url("../img/footballteam.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+  
 }
 
-.first h3{
-    color: white;
-    float: right;
-    margin-top: 100px;
+
+#info{
+    width: 600px;
+    /*
+    float: left;
+    */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
-.first img{
-    height: auto;
-    width: 100%;
-    position: relative;
-    z-index: 0;
-}
 
-#box{
-    height: 70px;
-    width: 500px;
-    position: absolute;
-    z-index: 2;
-    margin-left: 200px;
-    margin-top: -420px;
-    }
-    
-#box h1{
+#first h1{
+    width: 600px;
     font-size: 35px;
+    /*
+    color: black;
+    */
     color: white;
+    z-index: 11;
+    position: absolute;
+    margin-top: 250px;
+    font-weight: 400;
+
 }
 
-.second{
+#first h2{
+    width: 600px;
+    font-size: 28px;
+    /*
+    color: black;
+    */
+    color: white;
+    z-index: 11;
+    position: absolute;
+    margin-top: 295px;
+    font-weight: 300;
+    
+}
+
+#contact{
+    z-index: 11;
+    position: absolute;
+    margin-left: 205px;
+    margin-top: 360px;
+    height: 50px;
+    width: 170px;
+    background-color: transparent;
+    display: block;
+    cursor: pointer;
+}
+
+#contactText{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    border: 2px solid white;
+    padding: 7px 10px;
+    border-radius: 1px;
+   
+    
+}
+
+#contactText:hover{
+    color: lightgrey;
+    border: 2px solid lightgrey;
+}
+
+#first img{
+    height: 500px;
+    width: auto;
+    float: right;
+    margin-right: 300px;
+    margin-top: 50px;
+}
+
+#second{
     width: 100%;
-    height: 320px;
+    height: 280px;
     background-color: white;
 }
 
@@ -100,77 +155,367 @@ html{
     position: absolute;
     left: 50%;
     margin-left: -300px;
-    margin-top: 55px;
+    margin-top: 40px;
+    font-weight: 300;
 }
 #sitat p{
     font-size: 35px;
+    font-weight: 200;
     text-align: center;
 }
 
 
-.second h4{
+#second h4{
     float: right;
     font-size: 16px;
-    font-weight: 500;
-    margin-top: 285px;
+    font-weight: 300;
+    margin-top: 250px;
     margin-right: 25px;
 }
 
 .content{
-    width: 1000px;
+    width: 1100px;
     margin-left: auto;
     margin-right: auto;
-    background-color: grey;
     
 }
 
-.third{
+#third{
     width: 100%;
-    height: 35em;
+    height: 600px;
     background-color: #ffc857;
 }
 
-.third img{
-    height: 450px;
+#third img{
+    height: 600px;
     width: auto;
-    margin-top: 55px;
     margin-left: 90px;
+    margin-top: -16px;
 }
 
-.third p{
-    width: 20em;
+#third h1{
+    width: 400px;
     float: right;
-    font-size: 23px;
-    margin-top: 8em;
+    font-size: 45px;
+    font-weight: 300;
+    margin-right: 10px;
+    margin-top: 130px;
 }
 
-.fourth{
-    width: 100%;
-    height: 35em;
-    background-color: #e9724c;
+#third p{
+    width: 350px;
+    float: right;
+    font-size: 25px;
+    font-weight: 200;
+    margin-top: -380px;
+    margin-right: 60px;
 }
-.fourth img{
-    height: 450px;
+
+#third h5{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+#fourth{
+    width: 100%;
+    height: 500px;
+    background-color: #3f88c5;
+    margin-top: -24px;
+}
+
+#fourth iframe{
+    float: right;
+    height: 500px;
+    width: 888px;
+    margin-top: -12px;
+    right: 0;
+}
+
+#fifth{
+    width: 100%;
+    height: 950px;
+    background-color: #eafdf8;
+}
+
+#statsios{
+    width: 400px;
+    height: 300px;
+    padding-top: 100px;
+    float: right;
+    margin-right: 100px;
+    padding-bottom: 30px;
+}
+
+#statsios h3{
+    font-size: 23px;
+    font-weight: 100;
+    padding-top: 10px;
+}
+
+#statsios h2{
+    font-size: 40px;
+    font-weight: 300;
+    margin-top: -10px;
+}
+
+#statsios p{
+    font-size: 24px;
+    font-weight: 200;
+}
+
+#statsmac{
+    float: left;
+    padding-top: 600px;
+    margin-left: -400px;
+    width: 300px;
+}
+
+#chart{
+    font-size: 60px;
+    float: left;
+    margin-top: 100px;
+}
+
+#statsmac h2{
+    text-align: center;
+    font-size: 27px;
+    font-weight: 400;
+    width: 200px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+
+#iosStat{
+    height: 550px;
     width: auto;
-    margin-top: 55px;
-    margin-left: 90px;
+    float: left;
+    margin-top: 15px;
 }
 
-.fourth p{
-    width: 20em;
+
+#macStat{
+    height: 600px;
+    width: auto;
     float: right;
+    margin-right: -20px;
+    margin-top: -140px;
+}
+
+#sixth{
+    height: 600px;
+    width: 100%;
+    background-color: #d0e3cc;
+}
+
+#iosNF{
+    height: 600px;
+    width: auto;
+    margin-top: -70px;
+    
+}
+
+#information{
+    width: 500px;
+    float: right;
+}
+
+#pun{
+    float: right;
+    margin-top: 26px;
+    width: 400px;
+}
+
+#pun h2{
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 71px;
+}
+#sign {
+    font-size: 60px;
+    float: left;
+    width: 100px;
+    padding-top: 40px;
+}
+
+#inbox, #map, #slider{
+    margin-top: 40px;
+}
+
+#androidApp{
+    height: 100px;
+    width: auto;
+
+    float: right;
+    margin-left: 10px; 
+    
+}
+
+#seventh{
+    width: 100%;
+    height: 800px;
+    background-color: white;
+}
+
+#topFoot{
+    height: 200px;
+    border-bottom: 1px solid black;
+}
+
+#topFoot img{
+    height: 110px;
+    width: auto;
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+#btmApp{
     font-size: 23px;
-    margin-top: 8em;
+    font-weight: 300;
+    width: 110px;
+    padding: 11px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -85px;
+    color: black;
+    border: 2px solid black;
 }
 
-.fifth{
-    width: 100%;
-    height: 35em;
-    background-color: #481d24;
+#btmApp:hover{
+    color: grey;
+    border: 2px solid grey;
 }
 
-.sixth{
-    width: 100%;
-    height: 35em;
-    background-color: #255f85;
+#globe{
+    float: right;
+    font-size: 30px;
+    margin-right: 230px;
+    margin-top: -40px;
 }
+
+#changeLanguage{
+    float: right;
+    margin-top: -49px;
+    width: 210px;
+    height: 45px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    cursor: pointer;
+}
+select {
+  color: #000;
+  color: rgba(0,0,0,0);
+  text-shadow: 0 0 0 #000;
+}
+.no-textshadow select {
+  color: #000;
+}
+
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+#triangle{
+    font-size: 20px;
+    position: relative;
+    float: right;
+    margin-right: 20px;
+    margin-top: -38px;
+    z-index: 0;
+}
+#changeLanguage:focus{
+    outline:0;
+    border:none;
+    box-shadow:none;
+}
+
+select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+select::-ms-expand { /* for IE 11 */
+    display: none;
+}
+
+#contactInf{
+    height: 370px;
+    border-bottom: 1px solid black;
+}
+
+#mail{
+    margin-top: 20px;
+    width: 380px;
+    height: 45px;
+}
+
+#mailIcon{
+    font-size: 40px;
+}
+
+#mail p {
+    font-size: 20px;
+    font-weight: 200;
+    margin-right: 70px;
+    text-transform: uppercase;
+    float: right;
+    margin-top: 13px;
+}
+
+
+#facebook{
+    float: right;
+    margin-top: -55px;
+    margin-right: 60px;
+    font-size: 45px;
+    text-decoration: none;
+    color: black;
+}
+
+#youtube{
+    float: right;
+    margin-top: -55px;
+    font-size: 45px;
+    text-decoration: none;
+    color: black;
+    margin-right: 130px;
+}
+
+#apple{
+    height: 61px;
+    width: auto;
+    float: left;
+    margin-top: -95px;
+    margin-right: 600px;
+}
+
+#android{
+    height: 90px;
+    width: auto;
+    float: left;
+    margin-top: -110px;
+    margin-right: 300px;
+}
+
+#btmFoot p{
+    margin-top: 170px;
+}
+
+#btmFoot a{
+    float: right;
+    text-decoration: none;
+    color: black;
+    margin-top: -32px;
+}
+
+#btmFoot a:hover{
+    color: grey;
+}
+
+
+
