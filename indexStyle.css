@@ -57,7 +57,7 @@ html{
 #first {
     width: 100%;
     height: 584px;
-    background-image: url("./img/footballteam.jpg");
+    background-image: url("../img/footballteam 2.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -109,10 +109,10 @@ html{
 #contact{
     z-index: 11;
     position: absolute;
-    margin-left: 205px;
+    margin-left: 170px;
     margin-top: 360px;
     height: 50px;
-    width: 170px;
+    width: 240px;
     background-color: transparent;
     display: block;
     cursor: pointer;
@@ -226,6 +226,7 @@ html{
     float: right;
     height: 500px;
     width: 888px;
+    top: 0;
     right: 0;
 }
 
@@ -350,20 +351,80 @@ html{
 }
 
 #seventh{
+    height: 500px;
     width: 100%;
-    height: 800px;
+    background-color: #cf2424;
+}
+
+#free{
+    width: 700px;
+    height: 500px;
+    float: left;
+    border-right: 1px solid white;
+}
+
+#free h2{
+    padding-top: 130px;
+    font-size: 25px;
+    font-weight: 100;
+    color: white;
+}
+
+#free h1{
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+    padding-bottom: 20px;
+
+}
+
+#pricing{
+    height: 500px;
+    width: 569px;
+    float: right;
+    background-color: #3f88c5;
+}
+
+#pricing h2{
+    color: black;
+    padding-top: 100px;
+    font-weight: 500;
+    font-size: 33px;
+    margin-left: 70px;
+}
+
+#pricing h3{
+    color: black;
+    font-size: 24px;
+    font-weight: 300;
+    margin-left: 70px;
+}
+
+#free a {
+    padding: 7px 12px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+#eighth{
+    padding-top: 50px;
+    width: 100%;
+    height: 910px;
     background-color: white;
 }
 
 #topFoot{
-    height: 200px;
+    height: 180px;
     border-bottom: 1px solid black;
 }
 
 #topFoot img{
     height: 110px;
     width: auto;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 60px;
 }
 
@@ -442,7 +503,7 @@ select::-ms-expand { /* for IE 11 */
 }
 
 #contactInf{
-    height: 370px;
+    height: 640px;
     border-bottom: 1px solid black;
 }
 
@@ -484,6 +545,192 @@ select::-ms-expand { /* for IE 11 */
     margin-right: 130px;
 }
 
+#registerTeam{
+    width: 300px;
+    float: left;
+    margin-left: 90px;
+    margin-top: 30px;
+}
+
+#registerTeam h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#fakturering{
+    float: right;
+    margin-right: 350px;
+    width: 200px;
+    margin-top: 30px;
+}
+
+#globe2{
+    float: left;
+    font-size: 30px;
+    margin-right: 230px;
+    margin-top: -5px;
+}
+
+#list-teams{
+    width: 210px;
+    height: 45px;
+    position: absolute;
+    margin-left: -190px;
+    margin-top: -12px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    z-index: 1;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#triangle2{
+    font-size: 20px;
+    position: relative;
+    float: right;
+    margin-right: 20px;
+    z-index: 0;
+}
+#list-teams:focus{
+    outline:0;
+    border:none;
+    box-shadow:none;
+}
+
+
+ #registerTeam input[type="text"],#registerTeam input[type="password"], #registerTeam input[type="mail"]{
+    height: 43px;
+    width: 180px;
+    font-size: 16px;
+    background-color: #fff;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+ #fakturering input[type="text"],#fakturering input[type="password"], #fakturering input[type="mail"]{
+    height: 43px;
+    width: 180px;
+    font-size: 16px;
+    background-color: #fff;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+#fakturering h3{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+#btmInv{
+    width: 1100px;
+    padding-top: 400px;
+}
+
+#product{
+    width: 1100px;
+    height: 40px;
+}
+
+#product h3{
+    font-size: 21px;
+    font-weight: 400;
+}
+
+#product h4{
+    float: left;
+    margin-left: 600px;
+    margin-top: -47px;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+#line{
+    width: 50px;
+    float: left;
+    margin-left: 500px;
+    margin-top: -34px;
+    border-bottom: 1px solid grey;
+}
+
+#node-id{
+    float: right;
+}
+
+#node-id h6{
+    font-size: 19px;
+    font-weight: 300;
+    margin-right: 210px;
+    margin-top: -45px;
+    color: grey;
+}
+
+#node-id h5{
+    font-size: 19px;
+    font-weight: 300;
+    color: grey;
+    float: right;
+    margin-top: -69px;
+    margin-right: 97px;
+}
+
+#terms{
+    float: left;
+    margin-left: -655px;
+    margin-top: 91px;
+}
+
+#termh{
+    float: left;
+    margin-left: 40px;
+    margin-top: 80px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#product p{
+    float: left;
+    margin-left: 500px;
+    margin-top: -45px;
+    font-size: 18px;
+    font-weight: 300;
+    color: grey;
+}
+
+#register button{
+    float: right;
+    margin-top: 60px;
+    margin-right: -327px;
+    font-size: 18px;
+    font-weight: 400;
+    height: 45px;
+    width: 100px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#register button:hover{
+    color: grey;
+    border: 1px solid grey;
+}
+
+#register p{
+    font-size: 18px;
+    font-weight: 300;
+    color: grey;
+    float: left;
+    width: 550px;
+}
 #apple{
     height: 61px;
     width: auto;
@@ -499,6 +746,7 @@ select::-ms-expand { /* for IE 11 */
     margin-top: -110px;
     margin-right: 300px;
 }
+
 
 #btmFoot p{
     margin-top: 170px;
