@@ -357,10 +357,11 @@ html{
 }
 
 #free{
-    width: 700px;
+    width: 63%;
     height: 500px;
     float: left;
     border-right: 1px solid white;
+    padding: none;
 }
 
 #free h2{
@@ -368,6 +369,7 @@ html{
     font-size: 25px;
     font-weight: 100;
     color: white;
+    margin-left: 150px;
 }
 
 #free h1{
@@ -375,29 +377,7 @@ html{
     font-weight: 400;
     color: white;
     padding-bottom: 20px;
-
-}
-
-#pricing{
-    height: 500px;
-    width: 569px;
-    float: right;
-    background-color: #3f88c5;
-}
-
-#pricing h2{
-    color: black;
-    padding-top: 100px;
-    font-weight: 500;
-    font-size: 33px;
-    margin-left: 70px;
-}
-
-#pricing h3{
-    color: black;
-    font-size: 24px;
-    font-weight: 300;
-    margin-left: 70px;
+    margin-left: 150px;
 }
 
 #free a {
@@ -407,6 +387,15 @@ html{
     color: white;
     font-weight: 200;
     font-size: 20px;
+    margin-left: 150px;
+}
+
+#pricing{
+    height: 500px;
+    width: calc(37% - 1px);
+    float: right;
+    background-color: #3f88c5;
+    padding: none;
 }
 
 #eighth{
