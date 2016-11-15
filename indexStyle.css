@@ -509,10 +509,10 @@ select::-ms-expand { /* for IE 11 */
 #mail p {
     font-size: 20px;
     font-weight: 200;
-    margin-right: 70px;
+    margin-right: 40px;
     text-transform: uppercase;
     float: right;
-    margin-top: 13px;
+    margin-top: 10px;
 }
 
 
