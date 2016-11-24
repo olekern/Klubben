@@ -191,15 +191,15 @@ html{
     height: auto;
     margin-left: 0px;
     margin-top: 20px;
+    float: right;
 }
 
 #text{
-    float: right;
+    float: left;
     height: 400px;
     width: 200px;
     margin-top: 120px;
-    margin-right: 250px;
-}
+    margin-left: 100px;
 
 
 #third h1{
