@@ -196,6 +196,12 @@ html{
     background-color: #ffc857;
 }
 
+@media only screen and (max-device-width: 480px){
+    #third img{
+        margint-right: -600px
+    }
+}
+
 #third img{
     width: 550px;
     height: auto;
