@@ -198,14 +198,14 @@ html{
 
 @media only screen and (max-device-width: 1000px){
     #third img{
-        margin-right: -200px;
+        margin-left: 300px;
     }
 }
 
 #third img{
     width: 550px;
     height: auto;
-    margin-right: -150px;
+    margin-right: -130px;
     margin-top: 20px;
     float: right;
 }
