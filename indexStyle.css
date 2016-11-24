@@ -196,7 +196,7 @@ html{
     background-color: #ffc857;
 }
 
-@media only screen and (max-device-width: 480px){
+@media only screen and (max-device-width: 1000px){
     #third img{
         margint-right: -600px;
     }
