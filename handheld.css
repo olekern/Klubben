@@ -45,25 +45,10 @@ html{
 }
 
 .app{
-    text-decoration: none;
-    display: block;
-    color: white;
-    text-transform: uppercase;
-    cursor: pointer;
+    display: none;
     
 }
 
-#topApp{
-    float: right;
-    font-weight: 400;
-    font-size: 18px;
-    margin-top: 31px;
-    margin-right: 3em;
-}
-
-.app:hover {
-    color: lightgrey;
-}
 
 #first {
     width: 100%;
