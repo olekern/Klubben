@@ -92,7 +92,7 @@ body{
     height: auto;
     margin-top: 10px;
     float: left;
-    margin-left: -100px;
+    margin-left: -70px;
 }
 
 #text{
@@ -125,6 +125,7 @@ body{
     padding-top: 100px;
     padding-bottom: 30px;
     text-align: center;
+    margin-left: 5px;
 }
 
 #statsios h3{
@@ -175,7 +176,7 @@ body{
     height: auto;
     margin-top: 10px;
     float: left;
-    margin-left: -100px;
+    margin-left: -70px;
 }
 
 
@@ -183,7 +184,7 @@ body{
     width: 400px;
     height: auto;
     float: left;
-    margin-left: -100px;
+    margin-left: -70px;
     margin-top: -140px;
 }
 
