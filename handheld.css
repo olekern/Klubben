@@ -264,7 +264,7 @@ body{
 }
 
 #eighth{
-    background-color: white; 
+    background-color: blue; 
     height: 200px;
     width: 100%;
     top: 0;
@@ -283,7 +283,7 @@ body{
     width: auto;
     float: left;
     margin-top: 0px;
-    margin-left: 70px;
+    margin-left: 67px;
 }
 
 #copy{
