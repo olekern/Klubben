@@ -189,7 +189,8 @@ body{
 #sixth{
     height: 1000px;
     width: 100%;
-    background-color: #d0e3cc;
+    background-color: blue;
+    /* background-color: #d0e3cc; */
 }
 
 #iosNF{
@@ -211,7 +212,7 @@ body{
     margin-top: 20px;
 }
 #sign {
-    width: 50px;
+    width: 45px;
     font-size: 45px;
     float: left;
     padding-top: 40px;
