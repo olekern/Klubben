@@ -2,6 +2,10 @@ html{
     font-family: 'Helvetica Neue', sans-serif;
     width: 100%;
 }
+body{
+    width: 100%;
+    overflow: hidden;
+}
 
 #dvLoading
 	{
