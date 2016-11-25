@@ -1,11 +1,15 @@
 html{
     font-family: 'Helvetica Neue', sans-serif;
     width: 100%;
+    margin:0;
+    padding:0;
 }
 body{
     width: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
+    /*overflow-x: hidden;
+    overflow-y: auto; */
+    margin:0;
+    padding:0;
 }
 
 #dvLoading
@@ -44,7 +48,7 @@ body{
     margin-left: 50px;
     color: white;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 400;
     
 }
