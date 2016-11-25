@@ -35,7 +35,7 @@ html{
     text-decoration: none;
     float: left;
     display: block;
-    padding-top: 10px;
+    padding-top: 30px;
     margin-left: 50px;
     color: white;
     text-transform: uppercase;
@@ -61,7 +61,7 @@ html{
 }
 
 #sitat p{
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 200;
     text-align: center;
     color: black;
@@ -87,25 +87,24 @@ html{
     height: auto;
     margin-top: 10px;
     float: left;
-    margin-left: -60px;
+    margin-left: -70px;
 }
 
 #text{
     float: left;
-    margin-top: 10px;
     margin-left: 20px;
+    margin-top: -10px;
 }
 
 #third h1{
-    font-size: 35px;
+    font-size: 32px;
     font-weight: 300;
     text-align: center;
 }
 
 #third p{
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 200;
-    margin-left: 5px;
     text-align: center;
 
 }
@@ -217,7 +216,7 @@ html{
 }
 
 #inbox, #map, #slider{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 #androidApp{
