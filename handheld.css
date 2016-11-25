@@ -40,7 +40,7 @@ body{
     text-decoration: none;
     float: left;
     display: block;
-    padding-top: 21px;
+    padding-top: 20px;
     margin-left: 50px;
     color: white;
     text-transform: uppercase;
@@ -115,7 +115,7 @@ body{
 
 #fifth{
     width: 100%;
-    height: 1100px;
+    height: 1000px;
     background-color: #eafdf8;
 }
 
@@ -182,8 +182,8 @@ body{
     width: 380px;
     height: auto;
     float: left;
-    margin-left: 0px;
-    margin-top: -60px;
+    margin-left: 20px;
+    margin-top: -100px;
 }
 
 #sixth{
@@ -199,14 +199,12 @@ body{
 }
 
 #information{
-    width: 500px;
-    float: right;
+
 }
 
 #pun{
     float: right;
     margin-top: 26px;
-    width: 400px;
     margin-left: 70px;
 }
 
