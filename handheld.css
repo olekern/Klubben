@@ -182,7 +182,7 @@ body{
     width: 380px;
     height: auto;
     float: left;
-    margin-left: -5px;
+    margin-left: -10px;
     margin-top: -100px;
 }
 
@@ -195,8 +195,9 @@ body{
 #iosNF{
     width: 500px;
     height: auto;
-    margin-top: -40px;
+    margin-top: -50px;
     float: left;
+    margin-left: -70px;
 }
 
 #pun{
@@ -206,9 +207,9 @@ body{
 }
 
 #pun h2{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 #sign {
     font-size: 55px;
@@ -220,14 +221,6 @@ body{
 
 #inbox, #map, #slider{
     margin-top: 20px;
-}
-
-#androidApp{
-    height: 100px;
-    width: auto;
-    float: right;
-    margin-left: 10px; 
-    
 }
 
 #seventh{
