@@ -264,7 +264,7 @@ body{
 }
 
 #eighth{
-    background-color: white; 
+    background-color: #d0e3cc; 
     height: 200px;
     width: 100%;
     top: 0;
@@ -274,7 +274,7 @@ body{
     height: 61px;
     width: auto;
     float: left;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-left: 80px;
 }
 
