@@ -86,6 +86,7 @@ html{
     width: 500px;
     height: auto;
     margin-top: 20px;
+    float: left;
 }
 
 #text{
