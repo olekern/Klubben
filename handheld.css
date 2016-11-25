@@ -287,10 +287,7 @@ body{
 }
 
 #eighth p{
-    font-weight: 400;
-    font-size: 20px;
-    text-align: center;
-    margin-top: 300px;
+    display: none;
     
 }
 
