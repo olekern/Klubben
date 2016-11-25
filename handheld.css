@@ -264,7 +264,7 @@ body{
 }
 
 #eighth{
-    background-color: blue; 
+    background-color: white; 
     height: 200px;
     width: 100%;
     top: 0;
@@ -286,7 +286,7 @@ body{
     margin-left: 67px;
 }
 
-#copy{
+#eighth p{
     font-weight: 400;
     font-size: 20px;
     text-align: center;
