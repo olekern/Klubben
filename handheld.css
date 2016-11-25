@@ -40,7 +40,7 @@ body{
     text-decoration: none;
     float: left;
     display: block;
-    padding-top: 22px;
+    padding-top: 21px;
     margin-left: 50px;
     color: white;
     text-transform: uppercase;
@@ -182,8 +182,8 @@ body{
     width: 380px;
     height: auto;
     float: left;
-    margin-left: -20px;
-    margin-top: -30px;
+    margin-left: 0px;
+    margin-top: -60px;
 }
 
 #sixth{
@@ -207,7 +207,7 @@ body{
     float: right;
     margin-top: 26px;
     width: 400px;
-    marign-left: 70px;
+    margin-left: 70px;
 }
 
 #pun h2{
