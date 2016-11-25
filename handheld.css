@@ -132,7 +132,7 @@ html{
 }
 
 #first img{
-    height: 500px;
+    height: 100px;
     width: auto;
     float: right;
     margin-right: 10px;
@@ -147,7 +147,7 @@ html{
 
 
 #sitat{
-    width: 600px;
+    width: 100%;
     position: absolute;
     left: 50%;
     margin-left: -300px;
@@ -177,7 +177,7 @@ html{
 
 
 #third img{
-    width: 550px;
+    width: 100px;
     height: auto;
     margin-right: -100px;
     margin-top: 20px;
@@ -206,20 +206,6 @@ html{
 
 }
 
-#fourth{
-    width: 100%;
-    height: 500px;
-    background-color: #3f88c5;
-}
-
-#fourth iframe{
-    float: right;
-    height: 500px;
-    width: 888px;
-    top: 0;
-    right: 0;
-}
-
 #fifth{
     width: 100%;
     height: 950px;
@@ -227,8 +213,8 @@ html{
 }
 
 #statsios{
-    width: 400px;
-    height: 300px;
+    width: 100px;
+    height: auto;
     padding-top: 100px;
     float: right;
     margin-right: 100px;
@@ -256,7 +242,7 @@ html{
     float: left;
     padding-top: 600px;
     margin-left: -400px;
-    width: 300px;
+    width: 100px;
 }
 
 #chart{
@@ -276,7 +262,7 @@ html{
 
 
 #iosStat{
-    height: 550px;
+    height: 100px;
     width: auto;
     float: left;
     margin-top: 15px;
@@ -284,7 +270,7 @@ html{
 
 
 #macStat{
-    height: 600px;
+    height: 100px;
     width: auto;
     float: right;
     margin-right: -20px;
