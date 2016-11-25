@@ -182,7 +182,7 @@ body{
     width: 380px;
     height: auto;
     float: left;
-    margin-left: 5px;
+    margin-left: -5px;
     margin-top: -100px;
 }
 
@@ -195,6 +195,8 @@ body{
 #iosNF{
     width: 500px;
     height: auto;
+    margin-top: -40px;
+    float: left;
 }
 
 #pun{
@@ -206,13 +208,14 @@ body{
 #pun h2{
     font-size: 20px;
     font-weight: 400;
-    margin-top: 71px;
+    margin-top: 50px;
 }
 #sign {
-    font-size: 60px;
+    font-size: 55px;
     float: left;
     width: 100px;
     padding-top: 40px;
+    margin-left: 20px;
 }
 
 #inbox, #map, #slider{
