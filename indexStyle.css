@@ -11,6 +11,8 @@ html{
 	   position: fixed;
 	   z-index: 1000;
 	}
+
+@media all and (min-width: 1000px){
 	
 .nav{
     width: 100%;
@@ -772,4 +774,10 @@ select::-ms-expand { /* for IE 11 */
 }
 
 
+}
 
+@media all and (max-width: 1000px){
+    html{
+        display: none;
+    }
+}
