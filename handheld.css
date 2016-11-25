@@ -211,6 +211,7 @@ body{
     border-right: 0;
     width: 100%;
     background-color: #d0e3cc;
+    bottom: 0;
 }
 
 #iosNF{
@@ -265,8 +266,9 @@ body{
 
 #eighth{
     background-color: #d0e3cc; 
-    height: 400px;
+    height: 200px;
     width: 100%;
+    top: 0;
 }
 
 #apple{
@@ -290,7 +292,8 @@ body{
 #copy{
     font-weight: 400;
     font-size: 20px;
-    float: left
+    float: left;
+    margin-top: 200px
     
 }
 
