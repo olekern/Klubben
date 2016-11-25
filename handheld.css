@@ -64,6 +64,9 @@ body{
     height: 220px;
     background-color: white;
     right: 0;
+    margin-right: 0;
+    padding-right: 0;
+    border-right: 0;
 }
 
 #sitat p{
@@ -87,6 +90,9 @@ body{
     height: 790px;
     background-color: #ffc857;
     right: 0;
+    margin-right: 0;
+    padding-right: 0;
+    border-right: 0;
 }
 
 #third img{
@@ -120,6 +126,9 @@ body{
     height: 1050px;
     background-color: #eafdf8;
     right: 0;
+    margin-right: 0;
+    padding-right: 0;
+    border-right: 0;
 }
 
 #statsios{
@@ -192,6 +201,9 @@ body{
 #sixth{
     height: 1000px;
     right: 0;
+    margin-right: 0;
+    padding-right: 0;
+    border-right: 0;
     width: 100%;
     background-color: #d0e3cc;
     /* background-color: #d0e3cc; */
@@ -202,7 +214,7 @@ body{
     height: auto;
     margin-top: -50px;
     float: left;
-    margin-left: -80px;
+    margin-left: -70px;
 }
 
 #pun{
@@ -219,7 +231,7 @@ body{
     width: 45px;
     font-size: 45px;
     float: left;
-    padding-top: 25px;
+    padding-top: 5px;
     margin-left: 20px;
 }
 
