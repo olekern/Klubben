@@ -199,13 +199,13 @@ body{
 }
 
 #sixth{
-    height: 700px;
+    height: 740px;
     right: 0;
     margin-right: 0;
     padding-right: 0;
     border-right: 0;
     width: 100%;
-    background-color: blue;
+    background-color: #d0e3cc;
     /* background-color: #d0e3cc; */
 }
 
@@ -214,12 +214,12 @@ body{
     height: auto;
     margin-top: -50px;
     float: left;
-    margin-left: -60px;
+    margin-left: -63px;
 }
 
 #pun{
     float: right;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 #pun h2{
@@ -245,5 +245,11 @@ body{
 
 #eighth{
     display: none;
+}
+
+#copy{
+    font-weight: 400;
+    font-size: 20px;
+    float: left
 }
 
