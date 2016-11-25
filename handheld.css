@@ -96,7 +96,7 @@ body{
 }
 
 #third img{
-    width: 500px;
+    width: 300px;
     height: auto;
     margin-top: 10px;
     float: left;
@@ -182,7 +182,7 @@ body{
 
 
 #iosStat{
-    width: 500px;
+    width: 300px;
     height: auto;
     margin-top: 10px;
     float: left;
@@ -191,7 +191,7 @@ body{
 
 
 #macStat{
-    width: 380px;
+    width: 180px;
     height: auto;
     float: left;
     margin-left: -12px;
