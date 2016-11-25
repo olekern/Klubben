@@ -279,7 +279,7 @@ body{
 }
 
 #android{
-    height: 90px;
+    height: 92px;
     width: auto;
     float: left;
     margin-top: 0px;
@@ -289,9 +289,7 @@ body{
 #copy{
     font-weight: 400;
     font-size: 20px;
-    float: left;
-    margin-top: 250px
-    left: 0;
+    text-align: center;
     
 }
 
