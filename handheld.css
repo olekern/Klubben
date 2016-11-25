@@ -199,7 +199,7 @@ body{
 }
 
 #sixth{
-    height: 1000px;
+    height: 800px;
     right: 0;
     margin-right: 0;
     padding-right: 0;
@@ -214,7 +214,7 @@ body{
     height: auto;
     margin-top: -50px;
     float: left;
-    margin-left: -70px;
+    margin-left: -60px;
 }
 
 #pun{
@@ -225,13 +225,13 @@ body{
 #pun h2{
     font-size: 18px;
     font-weight: 400;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 #sign {
     width: 45px;
     font-size: 45px;
     float: left;
-    padding-top: 5px;
+    padding-top: -15px;
     margin-left: 20px;
 }
 
