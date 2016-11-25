@@ -199,13 +199,13 @@ body{
 }
 
 #sixth{
-    height: 800px;
+    height: 700px;
     right: 0;
     margin-right: 0;
     padding-right: 0;
     border-right: 0;
     width: 100%;
-    background-color: #d0e3cc;
+    background-color: blue;
     /* background-color: #d0e3cc; */
 }
 
@@ -225,7 +225,7 @@ body{
 #pun h2{
     font-size: 18px;
     font-weight: 400;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 #sign {
     width: 45px;
