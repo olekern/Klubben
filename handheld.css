@@ -227,45 +227,8 @@ html{
 }
 
 #seventh{
-    height: 500px;
-    width: 100%;
-    background-color: #cf2424;
+    display: none;
 }
-
-#free{
-    width: 63%;
-    height: 500px;
-    float: left;
-    border-right: 1px solid white;
-    padding: none;
-}
-
-#free h2{
-    padding-top: 130px;
-    font-size: 25px;
-    font-weight: 100;
-    color: white;
-    margin-left: 150px;
-}
-
-#free h1{
-    font-size: 40px;
-    font-weight: 400;
-    color: white;
-    padding-bottom: 20px;
-    margin-left: 150px;
-}
-
-#free a {
-    padding: 7px 12px;
-    border: 1px solid white;
-    text-decoration: none;
-    color: white;
-    font-weight: 200;
-    font-size: 20px;
-    margin-left: 150px;
-}
-
 
 #eighth{
     display: none;
