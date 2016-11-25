@@ -772,6 +772,6 @@ select::-ms-expand { /* for IE 11 */
     color: grey;
 }
 
-#copy{
+#copy p{
     display: none;
 }
