@@ -270,22 +270,21 @@ body{
     top: 0;
 }
 
-#apple{
+#apple svg{
     height: 61px;
     width: auto;
     float: left;
     margin-top: 20px;
-    margin-left: 80px;
+    margin-right: 80px;
 }
 
 #android{
-    height: 92px;
+    height: 91px;
     width: auto;
     float: left;
     margin-top: 0px;
-    margin-left: 67px;
+    margin-right: 67px;
 }
-
 #eighth p{
     display: none;
     

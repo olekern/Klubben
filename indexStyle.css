@@ -740,7 +740,7 @@ select::-ms-expand { /* for IE 11 */
     float: left;
     width: 550px;
 }
-#apple{
+#apple svg{
     height: 61px;
     width: auto;
     float: left;
@@ -749,7 +749,7 @@ select::-ms-expand { /* for IE 11 */
 }
 
 #android{
-    height: 90px;
+    height: 91px;
     width: auto;
     float: left;
     margin-top: -110px;
