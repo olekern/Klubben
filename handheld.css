@@ -45,7 +45,7 @@ body{
     text-decoration: none;
     float: left;
     display: block;
-    padding-top: 8px;
+    margin-top: 10px;
     margin-left: 70px;
     color: white;
     text-transform: uppercase;
@@ -223,13 +223,13 @@ body{
 
 #pun{
     float: right;
-    margin-top: -8px;
+    margin-top: -15px;
 }
 
 #pun h2{
     font-size: 18px;
     font-weight: 400;
-    margin-top: 47px;
+    margin-top: 50px;
 }
 #sign {
     width: 45px;
@@ -275,7 +275,7 @@ body{
     width: auto;
     float: left;
     margin-top: 20px;
-    margin-right: 80px;
+    margin-left: 100px;
 }
 
 #android{
@@ -283,7 +283,7 @@ body{
     width: auto;
     float: left;
     margin-top: 0px;
-    margin-right: 67px;
+    margin-left: 100px;
 }
 #eighth p{
     display: none;
