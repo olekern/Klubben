@@ -223,7 +223,7 @@ body{
 
 #pun{
     float: right;
-    margin-top: -15px;
+    margin-top: -20px;
 }
 
 #pun h2{
@@ -275,7 +275,7 @@ body{
     width: auto;
     float: left;
     margin-top: 20px;
-    margin-left: 100px;
+    margin-left: 70px;
 }
 
 #android{
@@ -283,7 +283,7 @@ body{
     width: auto;
     float: left;
     margin-top: 0px;
-    margin-left: 100px;
+    margin-left: 60px;
 }
 #eighth p{
     display: none;
