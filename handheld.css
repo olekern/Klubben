@@ -223,13 +223,13 @@ body{
 
 #pun{
     float: right;
-    margin-top: -4px;
+    margin-top: -8px;
 }
 
 #pun h2{
     font-size: 18px;
     font-weight: 400;
-    margin-top: 45px;
+    margin-top: 47px;
 }
 #sign {
     width: 45px;
