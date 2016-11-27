@@ -1,10 +1,20 @@
 html{
     height: 500%;
     background-color: #EDEDED;
+    overflow-x: hidden;
 }
+
+#dvLoading
+	{
+	   background: #cf2424 url(images/loader.gif) no-repeat center center;
+	   height: 100%;
+	   width: 100%;
+	   position: fixed;
+	   z-index: 1000;
+	}
 .nav {
     
-    height: 5em;
+    height: 80px;
     background: #cf2424;
     width: 100%;
    
@@ -21,7 +31,7 @@ html{
     margin:0;
     padding:0;
     overflow: hidden;
-    margin-right: 3em;
+    margin-right: 40px;
 }
 .nav ul li {
     list-style:none;
@@ -32,24 +42,14 @@ html{
     text-decoration: none;
     float: right;
     display: block;
-    padding: 2.1em 1.5em;
+    padding: 32px 25px;
     color: white;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 15px;
     letter-spacing: 1px;
 }
-.nav ul li p {
-    text-decoration: none;
-    float: right;
-    display: block;
-    padding: 1.05em 1.5em;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 15px;
-    letter-spacing: 1px;
-}
+
 .nav ul li a:hover {
     color: lightgrey;
 }
@@ -58,8 +58,8 @@ html{
     text-decoration: none;
     float: left;
     display: block;
-    padding: 1.1em;
-    margin-left: 5em;
+    padding: 26px;
+    margin-left: 50px;
     color: white;
     text-transform: uppercase;
     font-weight: 400;
@@ -70,17 +70,16 @@ html{
 
 #signOut{
     font-size: 23px;
-    margin-top: -0.8em; 
-    
+    margin-top: -2px;
 }
 
 
 #side-menu{
-    width: 15em;
+    width: 250px;
     float: left;
-    margin-left: -27em;
-    margin-top: 1em;
-    height: 40em;
+    margin-left: -250px;
+    margin-top: 15px;
+    height: 400px;
     background-color: white;
     border: 1px solid #d5d5d5;
 }
@@ -91,12 +90,6 @@ html{
     border: 1px solid #d5d5d5;
 }
 
-#profile img{
-    width: 7em;
-    height: auto;
-    float: left;
-    margin-left: -2em;
-}
 
 #brukernavn{
     text-align: center; 
@@ -132,38 +125,27 @@ html{
 }
 
 .postClass{
-    width: 30em;
+    width: 500px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.posts {
-    word-wrap: break-word;
-    border-color: #C2C2C2;
-}
-
-.posts img {
-    width: 20em;
-    height: auto;
-}
-
-
 .form{
     background-color: white;
-    width: 30em;
-    margin-top: 1em;
-    margin-bottom: 0.5em;
+    width: 500px;
+    margin-top: 15px;
+    margin-bottom: 10px;
     border: 1px solid #d5d5d5;
-    height: 10.7em;
+    height: 175px;
 }
 form {
-    margin-bottom: 5em;
+    margin-bottom: 60px;
 }
 
 #list-pb img{
-    height: 5em;
-    margin-left: -0.5em;
-    margin-top: 1em;
+    height: 65px;
+    margin-left: -5px;
+    margin-top: 15px;
     width: auto;
 }
 
@@ -174,36 +156,22 @@ form {
     overflow: auto;
     border: none;
     resize: none;
-    margin-left: 8em;
-    top: -6.3em;
+    margin-left: 130px;
+    top: -85px;
     position: relative;
 
 }
 
 #post-file{
-    margin-left: 3em;
+    margin-left: 40px;
     position: relative;
-    top: 1em;
-}
-
-.imageInput::before{
-    content: "\f0c0";
-    position: absolute;
-    font-family: "FontAwesome";
-    font-size: 25px;
-    color: #222E3C;
-    margin-left: 40em;
-    
-}
-
-#postIcon{
-    font-size: 5em;
+    top: 13px;
 }
 
 .form button{
     float: right;
-    margin-right: 2em;
-    margin-top: 0.4em;
+    margin-right: 10px;
+    margin-top: 6px;
     padding: 6px 8px;
     color: #fff;
     border: none;
@@ -216,47 +184,176 @@ form {
 }
 
 #tekstboks{
-    height: 7em;
-    width: 30em;
+    height: 110px;
+    width: 500px;
     border-bottom: 1px solid #C2C2C2;
 }
 
 #list-posts {
-    width: 30em;
-    border-color: #C2C2C2;
-    background-color: #EDEDED;
-    margin-left: -2.3em;
+    width: 502px;
+    word-wrap: break-word;
+    padding: 0;
+    margin: 0;
 }
 
+#list-posts img {
+    width: 400px;
+    height: auto;
+}
 
 #feedCell{
-    padding: 2em;
-    background-color: white;
-    margin-bottom: 0.5em;
     background-color: white;
     border: 1px solid #d5d5d5;
 }
 
+#profilBilde img{
+    height: 65px;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: auto;
+}
+
 #feedCell h4{
-    margin-left: 6.7em;
-    margin-top: -4em;
-    margin-bottom: 4em;
-    font-size: 17px;
+    margin-left: 110px;
+    margin-top: -65px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 #feedCell h5{
-    margin-left: 7.7em;
-    margin-top: -4em;
+    margin-left: 112px;
+    margin-top: -20px;
     margin-bottom: 3em;
-    font-weight: 500;
+    font-weight: 400;
     color: grey;
     font-size: 15px;
 }
 
-#profilBilde img{
-    width: 5em;
-    height: auto;
+#feedCell p{
+    font-size: 17px;
+    font-weight: 300;
+    margin-left: 5px;
+    
 }
+
+#post{
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#like-comment{
+    padding: 0;
+    height: 30px;
+    width: 500px;
+    background-color: white;
+    border-top: 1px solid #d5d5d5;
+    padding-top: 8px;
+}
+
+i[name="likeIconPressed"]{
+    position: absolute;
+    margin-top: -3px;
+    margin-left: 40px;
+    font-size: 30px;
+    color: #cf2424;
+    cursor: pointer;
+}
+
+i[name="likeIcon"]{
+    position: absolute;
+    margin-top: -3px;
+    margin-left: 40px;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+#like-comment h4{
+    font-size: 17px;
+    font-weight: 300;
+    margin-left: 85px;
+    display: inline;
+    cursor: pointer;
+}
+
+#commentAmount p{
+    font-size: 17px;
+    font-weight: 300;
+    margin-left: 380px;
+    margin-top: -31px;
+}
+
+#like-comment span{
+    background: #cf2424;
+    color: white;
+    font-size: 13px;
+    height: 30px;
+    width: 100px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: 10px;
+    left: -125px;
+    display:none;
+    z-index: 2;
+
+}
+
+#like-comment h4:hover span{
+    display:block;
+
+}
+
+#commentSection{
+    width: 500px;
+    height: 50px;
+    background-color: #f7f7f7;
+    border: 1px solid #d5d5d5;
+    
+}
+
+#commentIcon{
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 20px;
+    font-size: 30px;
+    color: #b4b4b4;
+}
+
+#commentSection textarea{
+    font-family: Microsoft Sans Serif, Verdana;
+    font-weight: 500;
+    font-size: 15px;
+    overflow: auto;
+    resize: none;
+    margin-top: 7px;
+    margin-left: 70px;
+    border: 1px solid #d5d5d5;
+    position: relative;
+    height: 27px;
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-right: 10px;
+}
+
+#commentSection button{
+    float: right;
+    margin-right: 15px;
+    margin-top: 11px;
+    padding: 4px 5px;
+    color: #fff;
+    border: none;
+    background-color: #01baef;
+    border-bottom: 3px solid #00a7d7;
+    font-size: 11px;
+    font-weight: 500;
+    display: block;
+    cursor: pointer;
+}
+
 
 #request{
     position: absolute;
@@ -272,7 +369,7 @@ form {
     color: white;
     font-weight: 600;
     font-size: 18px;
-    margin-left: 2em ;
+    margin-left: 2em;
 }
 
 #all-requests{
@@ -285,6 +382,10 @@ form {
     color: white;
 }
 
-
-
-
+#comments{
+    width: 490px;
+    background-color: #f7f7f7;
+    border: 1px solid #d5d5d5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

@@ -357,16 +357,22 @@
                 var query = new Parse.Query(Post);
                 query.descending("createdAt");
                 query.include("author");
+                query.include("comments");
+                query.include("likes");
                 query.find({
 
                         success: function(results) {
                             var output = "";
+                            var commentid = new Array();
 
                             for (var i in results) {
                                 results[i].toJSON();
                                 var content = results[i].get("content");
                                 var author = results[i].get("author");
                                 var name = "Anonymous";
+                                var postID = results[i];
+                                var posts = postID.id;
+                                var realPost = posts;
 
                                 var date = results[i].get("createdAt");
                                 var dato = date.toString();
@@ -398,23 +404,229 @@
                                 }
 
                                 output += "<div id=\"feedCell\">";
+                                output += "<div id=\"post\">";
                                 output += "<div id=\"profilBilde\">";
                                 output += pB;
                                 output += userPB;
                                 output += "</div>"
                                 output += "<h4>" + name + "</h4>";
-                                output += "<h5>" + "Skrevet: " + datoen + "</h5>";
+                                output += "<h5>" + datoen + "</h5>";
                                 output += "<p>" + content + "</p>";
                                 output += img;
-                                output += "</div>"
+                                output += "</div>";
+
+                                var likes = results[i].get("likes");
+                                output += "<div id=\"like-comment\">";
+
+                                if ($.inArray(currentUserId, likes) !== -1) {
+
+                                    output += '<i class="fa fa-thumbs-up" aria-hidden="true" name="likeIconPressed" id="' + realPost + '" onclick="dislike(id);"></i>';
+                                } else {
+                                    output += '<i class="fa fa-thumbs-up" aria-hidden="true" id="' + realPost + '" name="likeIcon" onclick="like(id);"></i>';
+                                }
+
+                                if (likes != null) {
+                                    output += "<h4>" + likes.length + " likerklikk";
+
+                                } else if (likes == undefined) {
+                                    output += "<h4>0 likerklikk";
+                                } else if (likes == 0) {
+                                    output += "<h4>0 likerklikk";
+                                }
+
+                                var User = Parse.Object.extend("User");
+                                var query3 = new Parse.Query(User);
+                                output += '<span>likeName</span>';
+                                query3.containedIn("objectId", likes);
+                                query3.find({
+                                        success: function(results) {
+                                            for (var i in results) {
+                                                if (results[i] != null) {
+                                                    var liked = results[i];
+                                                    var likeName = liked.get("name");
+                                                    if (liked != null) {
+
+
+                                                    }
+                                                    console.log(likeName);
+                                                    output += '<span>likeName</span>';
+                                                    
+
+                                                }
+                                            }
+                                        
+                                        }
+                                        
+                                    });
+                                    
+                                    output += '</h4>';
+                                output += "</div>";
+                                output += '<div id="commentAmount">';
+
+                                commentid = results[i].get("comments");
+
+                                if (commentid != null) {
+                                    if (commentid.length == 1) {
+                                        output += "<p>" + commentid.length + " kommentar</p>";
+                                    } else {
+                                        output += '<p>' + commentid.length + ' kommentarer</p>';
+                                    }
+                                } else if (commentid == undefined) {
+                                    output += "<p>0 kommentar</p>";
+                                } else if (commentid == 0) {
+                                    output += "<p>0 kommentar</p>";
+                                }
+                                output += "</div>";
+                                output += "</div>";
+
+                                output += '<div id="commentSection">';
+                                output += '<i class="fa fa-comment-o" id="commentIcon" aria-hidden="true"></i>';
+                                output += '<textarea rows="1" cols="40 name="text" id="text' + i + '" placeholder="Skriv en kommentar"></textarea>';
+                                output += '<button type="button" name="' + realPost + '" id="' + i + '" onclick="submitComment(id, name)">Publiser</button>';
+                                output += '</div>';
+
+
+                                commentid = results[i].get("comments");
+
+                                if (commentid != null) {
+
+                                    for (var i in commentid) {
+                                        if (commentid[i] != null) {
+                                            var ct = commentid[i];
+                                            var ctxt = ct.get("text");
+                                            var ctauth = ct.get("author");
+                                            var ctname = ctauth.get("name");
+
+                                            var ctdate = results[i].get("createdAt");
+                                            var ctdato = ctdate.toString();
+                                            var ctdatoen = ctdato.substring(4, 15);
+
+                                            output += "<div id=\"comments\">";
+                                            output += "<h4>" + ctname + "</h4>";
+                                            output += "<h5>" + "Skrevet: " + ctdatoen + "</h5>";
+                                            output += "<p>" + ctxt + "</p>";
+                                            output += "</div>"
+                                        }
+                                    }
+
+                                }
+
+
                             }
                             $("#list-posts").html(output);
-
                         },
                         error: function(error) {
                             console.log("Query error:" + error.message);
                         }
                     });
+            }
+            
+            function like(id) {
+                var query = new Parse.Query(Post);
+                query.descending("createdAt");
+                query.include("author");
+                query.find({
+
+                        success: function(results) {
+                            var user = Parse.User.current();
+                            var userId = user.id;
+
+                            for (var i = 0; i < results.length; i++) {
+                                var post = results[i].id;
+                                if (post === id) {
+                                    results[i].addUnique("likes", userId);
+                                    results[i].save(null, {
+                                            success: function(newPost) {
+                                                console.log("Fantastisk");
+                                                getPosts();
+                                            },
+                                            error: function(newPost, error) {
+                                                console.log("Error:" + error.message);
+                                            }
+                                        });
+                                }
+                            }
+                        }
+                    });
+            }
+
+            function dislike(id) {
+                var query = new Parse.Query(Post);
+                query.descending("createdAt");
+                query.include("author");
+                query.find({
+
+                        success: function(results) {
+                            var user = Parse.User.current();
+                            var userId = user.id;
+
+                            for (var i = 0; i < results.length; i++) {
+                                var post = results[i].id;
+                                if (post === id) {
+                                    console.log(post);
+                                    results[i].remove("likes", userId);
+                                    results[i].save(null, {
+                                            success: function(newPost) {
+                                                console.log("Fantastisk");
+                                                getPosts();
+                                            },
+                                            error: function(newPost, error) {
+                                                console.log("Error:" + error.message);
+                                            }
+                                        });
+                                }
+                            }
+                        }
+                    });
+            }
+
+            function submitComment(number, postID) {
+
+
+                var Comment = Parse.Object.extend("data_" + klubbID + "_Comments");
+                var commenting = new Comment();
+
+                var postComment = document.getElementById("text" + number).value;
+
+                commenting.set("text", postComment);
+                commenting.set("author", Parse.User.current());
+
+                commenting.save({
+                        success: function(commenting) {
+                            var objectID = commenting.id;
+                            console.log(objectID);
+                            console.log(postComment);
+
+                            var post = Parse.Object.extend("data_" + klubbID + "_Posts");
+                            var Query = new Parse.Query(post);
+
+                            Query.find({
+                                    success: function(objects) {
+                                        for (var j = 0; j < objects.length; j++) {
+                                            var post = objects[j].id;
+                                            if (post == postID) {
+                                                objects[j].addUnique("comments", commenting);
+                                                objects[j].save({
+                                                        success: function() {
+                                                            getPosts();
+                                                        }
+                                                    });
+                                            }
+
+                                        }
+
+                                    },
+                                    error: function(error) {
+                                        console.log("Query error:" + error.message);
+                                    }
+                                });
+
+                        },
+                        error: function(error) {
+                            console.log("Ikkje bra");
+                        }
+                    });
+
             }
 
             getPosts();
