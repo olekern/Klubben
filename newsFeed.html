@@ -100,6 +100,11 @@
             //Parse.initialize("wSHRpQQxW6jgmxRQV8UXogZcOiRvO8s8VoVmlMYI");
              //Parse.serverURL = 'https://klubbenheroku.herokuapp.com/parse';
             Parse.initialize("wSHRpQQxW6jgmxRQV8UXogZcOiRvO8s8VoVmlMYI", "imVCWFzFX4fVRGcqX8ioidD686IPb5ELzHd3WkJw");
+            
+            var currentUserName = Parse.User.current().get("name");
+            console.log(currentUserName);
+            var currentUserId = Parse.User.current().id;
+            console.log(currentUserId);
 
 
             function checkLogin() {
