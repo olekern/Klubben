@@ -67,11 +67,12 @@
     <script type="text/javascript">
         Parse.initialize("wSHRpQQxW6jgmxRQV8UXogZcOiRvO8s8VoVmlMYI", "imVCWFzFX4fVRGcqX8ioidD686IPb5ELzHd3WkJw");
         
-
-        function chooseClub0() {
-
-            var utvikler = "umCaWls7lR";
-            var Club = Parse.Object.extend("data_" + utvikler + "_Members");
+        function chooseClub(team, id){
+            
+            console.log(team);
+            console.log(id);
+            
+            var Club = Parse.Object.extend("data_" + id + "_Members");
 
             console.log("heisann");
 
@@ -93,87 +94,7 @@
                                 console.log("Error:" + error.message);
                             }
                         });
-
-        }
-
-
-        function chooseClub1() {
-            var ullernJ = "dgrxgGwOLw";
-            var Club1 = Parse.Object.extend("Members");
-
-            console.log("heisann");
-
-            var currentUser = Parse.User.current();
-            var bruker = Parse.User.current().id;
-            console.log(currentUser);
-            console.log(bruker);
-            console.log(klubbID)
             
-            var club = new Club1();
-            club.set("user", currentUser)
-            club.set("accepted", false);
-            
-            club.save(null, {
-                            success: function(club) {
-                                console.log("Fantastisk");
-                                location.href = "newsFeed.html";
-                            },
-                            error: function(club, error) {
-                                console.log("Error:" + error.message);
-                            }
-                        });
-        }
-
-        function chooseClub2() {
-            var ullernA = "LcjFbIuRpx";
-            var Club = Parse.Object.extend("data_" + ullernA + "_Members");
-
-            console.log("heisann");
-
-            var currentUser = Parse.User.current();
-            var bruker = Parse.User.current().id;
-            console.log(currentUser);
-            console.log(bruker);
-            
-            var club = new Club();
-            club.set("user", currentUser)
-            club.set("accepted", false);
-            
-            club.save(null, {
-                            success: function(club) {
-                                console.log("Fantastisk");
-                                location.href = "newsFeed.html";
-                            },
-                            error: function(club, error) {
-                                console.log("Error:" + error.message);
-                            }
-                        });
-        }
-
-        function chooseClub3() {
-            var ullern02 = "aryOYor35o";
-            var Club = Parse.Object.extend("data_" + ullern02 + "_Members");
-
-            console.log("heisann");
-
-            var currentUser = Parse.User.current();
-            var bruker = Parse.User.current().id;
-            console.log(currentUser);
-            console.log(bruker);
-            
-            var club = new Club();
-            club.set("user", currentUser)
-            club.set("accepted", false);
-            
-            club.save(null, {
-                            success: function(club) {
-                                console.log("Fantastisk");
-                                location.href = "newsFeed.html";
-                            },
-                            error: function(club, error) {
-                                console.log("Error:" + error.message);
-                            }
-                        });
         }
 
         var Teams = Parse.Object.extend("Teams");
@@ -186,12 +107,12 @@
                         var output = "";
                         for (var i in results) {
                             var teams = results[i].get("Name");
+                            var teamId = results[i].id;
                             console.log(teams);
-                            var funksjon = "chooseClub" + i + "();";
 
                             output += "<div id=\"lagVelg\">";
                             output += "<h4>" + teams + "</h4>";
-                            output += '<button name="submit" id="forespor" type="button" onclick=' + '"' + funksjon + '"' + '>Forespør medlemskap</button>';
+                            output += '<button name="' + teams +'" id="'+ teamId +'" type="button" onclick="chooseClub(name, id);">Forespør medlemskap</button>';
                             output += "</div>";
                         }
                         $("#list-posts").html(output);
