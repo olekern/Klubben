@@ -203,7 +203,6 @@
                 queryQ.descending("createdAt");
                 queryQ.include("user");
                 queryQ.find().then(function() {
-  ...
 }, function(err) {
   handleParseError(err);
 });
