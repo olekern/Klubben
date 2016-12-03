@@ -120,6 +120,7 @@
                     
             handleParseError();
                 
+            var klubbID = Parse.User.current().get("team").id;
             var currentUser = Parse.User.current();
             if (currentUser) {
             } else {
@@ -227,7 +228,6 @@
                 console.log(id);
             }
             console.log(klubbID);
-            localStorage.setItem("clubId", klubbID);
         </script>
 
 
