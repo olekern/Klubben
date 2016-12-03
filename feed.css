@@ -137,6 +137,8 @@ html{
     margin-bottom: 10px;
     border: 1px solid #d5d5d5;
     height: 175px;
+    margin-left: auto;
+    margin-right: auto;
 }
 form {
     margin-bottom: 60px;
@@ -190,10 +192,10 @@ form {
 }
 
 #list-posts {
-    width: 502px;
+    width: 512px;
     word-wrap: break-word;
     padding: 0;
-    margin: 0;
+    margin-left: -4px;
 }
 
 #list-posts img {
@@ -208,7 +210,7 @@ form {
 
 #profilBilde img{
     height: 65px;
-    margin-left: 5px;
+    margin-left: 0px;
     margin-top: 5px;
     width: auto;
 }
@@ -246,6 +248,7 @@ form {
     padding: 0;
     height: 30px;
     width: 500px;
+    margin-left: -3px;
     background-color: white;
     border-top: 1px solid #d5d5d5;
     padding-top: 8px;
@@ -253,8 +256,8 @@ form {
 
 i[name="likeIconPressed"]{
     position: absolute;
-    margin-top: -3px;
-    margin-left: 40px;
+    margin-left: 20px;
+    margin-top: -2px;
     font-size: 30px;
     color: #cf2424;
     cursor: pointer;
@@ -262,8 +265,8 @@ i[name="likeIconPressed"]{
 
 i[name="likeIcon"]{
     position: absolute;
-    margin-top: -3px;
-    margin-left: 40px;
+    margin-left: 20px;
+    margin-top: -2px;
     font-size: 30px;
     color: black;
     cursor: pointer;
@@ -272,18 +275,19 @@ i[name="likeIcon"]{
 #like-comment h4{
     font-size: 17px;
     font-weight: 300;
-    margin-left: 85px;
+    margin-left: 75px;
     display: inline;
     cursor: pointer;
 }
 
-#commentAmount p{
+#like-comment p{
+    display: inline;
     font-size: 17px;
     font-weight: 300;
-    margin-left: 380px;
-    margin-top: -31px;
+    margin-left: 240px;
 }
 
+/*
 #like-comment span{
     background: #cf2424;
     color: white;
@@ -306,10 +310,12 @@ i[name="likeIcon"]{
     display:block;
 
 }
+*/
 
 #commentSection{
     width: 500px;
     height: 50px;
+    margin-left: 5px;
     background-color: #f7f7f7;
     border: 1px solid #d5d5d5;
     
