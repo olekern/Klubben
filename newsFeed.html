@@ -107,19 +107,7 @@
                     $("#brukernavn").html("");
                 }
             }
-            
-            function handleParseError() {
-                  switch () {
-                    case Parse.Error.INVALID_SESSION_TOKEN:
-                      Parse.User.logOut();
-                        location.href = "registration.html";
-                      break;
 
-                  }
-            }
-                    
-            handleParseError();
-                
             var klubbID = Parse.User.current().get("team").id;
             var currentUser = Parse.User.current();
             if (currentUser) {
