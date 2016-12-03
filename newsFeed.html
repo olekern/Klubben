@@ -107,12 +107,32 @@
                     $("#brukernavn").html("");
                 }
             }
+            
+            function handleParseError(err) {
+                  switch (err.code) {
+                    case Parse.Error.INVALID_SESSION_TOKEN:
+                      Parse.User.logOut();
+                        location.href = "registration.html";
+                      break;
+
+                  }
+                }
+
+                // For each API request, call the global error handler
+                query.find().then(function() {
+                  ...
+                }, function(err) {
+                  handleParseError(err);
+                });
+                    
+            handleParseError();
             var currentUser = Parse.User.current();
             if (currentUser) {
             } else {
                 location.href = "registration.html";
             }
             checkLogin();
+                    
             function logOut() {
                 Parse.User.logOut(
                     console.log("Logger ut"));
