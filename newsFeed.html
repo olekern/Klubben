@@ -108,8 +108,8 @@
                 }
             }
             
-            function handleParseError(err) {
-                  switch (err.code) {
+            function handleParseError() {
+                  switch () {
                     case Parse.Error.INVALID_SESSION_TOKEN:
                       Parse.User.logOut();
                         location.href = "registration.html";
