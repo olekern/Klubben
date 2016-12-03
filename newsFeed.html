@@ -96,6 +96,15 @@
              //Parse.serverURL = 'https://klubbenheroku.herokuapp.com/parse';
             Parse.initialize("wSHRpQQxW6jgmxRQV8UXogZcOiRvO8s8VoVmlMYI", "imVCWFzFX4fVRGcqX8ioidD686IPb5ELzHd3WkJw");
             
+            function handleParseError(err) {
+  switch (err.code) {
+    case Parse.Error.INVALID_SESSION_TOKEN:
+      Parse.User.logOut();
+      location.href = "registration.html";
+      break;
+  }
+}
+            
             var currentUserName = Parse.User.current().get("name");
             console.log(currentUserName);
             var currentUserId = Parse.User.current().id;
@@ -125,6 +134,10 @@
                 klubbID = Parse.User.current().get("team").id;
                 var Query = Parse.Object.extend("data_" + klubbID + "_Members");
                 var query = new Parse.Query(Query);
+                query.find().then(function() {
+}, function(err) {
+  handleParseError(err);
+});
                 var outputRole = "";
                 var outputReq = "";
                 query.equalTo("user", Parse.User.current());
@@ -179,6 +192,7 @@
                         },
                         error: function(error) {
                             alert("Error: " + error.code + " " + error.message);
+                            handleParseError();
                         }
                     });
             }
@@ -188,6 +202,11 @@
                 var queryQ = new Parse.Query(query);
                 queryQ.descending("createdAt");
                 queryQ.include("user");
+                queryQ.find().then(function() {
+  ...
+}, function(err) {
+  handleParseError(err);
+});
                 queryQ.find({
                         success: function(objects) {
                             for (var a in objects) {
@@ -211,6 +230,7 @@
                         },
                         error: function(error) {
                             console.log("Query error:" + error.message);
+                            handleParseError();
                         }
                     });
                 console.log(id);
@@ -256,6 +276,7 @@
                                     },
                                     error: function(error) {
                                         console.log("Post Save with File Error:" + error.message);
+                                        handleParseError();
                                     }
                                 });
                         });
@@ -269,6 +290,7 @@
                             },
                             error: function(newPost, error) {
                                 console.log("Error:" + error.message);
+                                handleParseError();
                             }
                         });
                 }
@@ -304,6 +326,10 @@
                 query.include("author");
                 query.include("comments");
                 query.include("likes");
+                query.find().then(function() {
+}, function(err) {
+  handleParseError(err);
+});
                 query.find({
                         success: function(results) {
                             var output = "";
@@ -429,6 +455,7 @@
                         },
                         error: function(error) {
                             console.log("Query error:" + error.message);
+                            handleParseError();
                         }
                     });
             }
@@ -437,6 +464,10 @@
                 var query = new Parse.Query(Post);
                 query.descending("createdAt");
                 query.include("author");
+                query.find().then(function() {
+}, function(err) {
+  handleParseError(err);
+});
                 query.find({
                         success: function(results) {
                             var user = Parse.User.current();
@@ -452,6 +483,7 @@
                                             },
                                             error: function(newPost, error) {
                                                 console.log("Error:" + error.message);
+                                                handleParseError();
                                             }
                                         });
                                 }
@@ -463,6 +495,10 @@
                 var query = new Parse.Query(Post);
                 query.descending("createdAt");
                 query.include("author");
+                query.find().then(function() {
+}, function(err) {
+  handleParseError(err);
+});
                 query.find({
                         success: function(results) {
                             var user = Parse.User.current();
@@ -479,6 +515,7 @@
                                             },
                                             error: function(newPost, error) {
                                                 console.log("Error:" + error.message);
+                                                handleParseError();
                                             }
                                         });
                                 }
@@ -515,11 +552,13 @@
                                     },
                                     error: function(error) {
                                         console.log("Query error:" + error.message);
+                                        handleParseError();
                                     }
                                 });
                         },
                         error: function(error) {
                             console.log("Ikkje bra");
+                            handleParseError();
                         }
                     });
             }
