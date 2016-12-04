@@ -275,7 +275,7 @@ i[name="likeIcon"]{
 #like-comment h4{
     font-size: 17px;
     font-weight: 300;
-    margin-left: 75px;
+    margin-left: 65px;
     display: inline;
 }
 
@@ -388,9 +388,23 @@ i[name="likeIcon"]{
 }
 
 #comments{
-    width: 490px;
+    width: 500px;
+    margin-left: 5px;
     background-color: #f7f7f7;
     border: 1px solid #d5d5d5;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+#comments h4{
+    margin: 0;
+    padding: 0;
+}
+
+#comments h5{
+    margin: 0;
+    padding: 0;
+}
+#comments p{
+    margin: 0;
+    padding: 0;
 }

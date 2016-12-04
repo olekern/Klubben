@@ -74,7 +74,6 @@
             //Parse.initialize("wSHRpQQxW6jgmxRQV8UXogZcOiRvO8s8VoVmlMYI");
              //Parse.serverURL = 'https://klubbenheroku.herokuapp.com/parse';
             Parse.initialize("wSHRpQQxW6jgmxRQV8UXogZcOiRvO8s8VoVmlMYI", "imVCWFzFX4fVRGcqX8ioidD686IPb5ELzHd3WkJw");
-
             function checkLogin() {
                 if (Parse.User.current) {
                     $("#brukernavn").html(Parse.User.current().get("name"))
@@ -83,31 +82,25 @@
                 }
             }
             checkLogin();
-
             //var klubbID = localStorage.getItem("clubId");
             var klubbID = Parse.User.current().get("team").id;
             var SurveyAnswer = Parse.Object.extend("data_" + klubbID + "_Surveys_Answers");
             var Surveys = Parse.Object.extend("data_" + klubbID + "_Surveys");
-
             function getAnswers() {
                 var Query = new Parse.Query(Surveys);
                 Query.include("survey");
-
                 var monthNames = [
                     "Jan", "Feb", "Mar",
                     "Apr", "May", "Jun", "Jul",
                     "Aug", "Sep", "Oct",
                     "Nov", "Dec"
                 ];
-
                 var daysOfTheWeek = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue", "Wed"];
-
                 var date = new Date();
                 var day = date.getDate();
                 var monthIndex = date.getMonth();
                 var daysIndex = date.getMonth();
                 var year = date.getFullYear();
-
                 if (day < 10) {
                     console.log("hei");
                     var idag = monthNames[monthIndex] + " " + "0" + day + " " + year;
@@ -115,10 +108,8 @@
                     var idag = monthNames[monthIndex] + " " + day + " " + year;
                 }
                 console.log(idag);
-
                 Query.find({
                         success: function(objects, results) {
-
                             for (var i = 0; i < objects.length; i++) {
                                 var navn = objects[i].get("survey").get("name");
                                 if (navn == "Evaluering av trening/kamp") {
@@ -174,18 +165,14 @@
                                                         output += "<p>" + evaluering + "</p>";
                                                         output += "</div>";
                                                         var data1 = {
-
                                                             labels: name,
                                                             series: [morsom]
                                                         }
-
                                                         var data2 = {
-
                                                             labels: name,
                                                             series: [prestasjon]
                                                         }
                                                         var data3 = {
-
                                                             labels: name,
                                                             series: [slitsom]
                                                         }
@@ -194,39 +181,27 @@
                                                             height: '20em',
                                                             high: 10,
                                                             low: 0,
-
                                                         };
-
                                                         new Chartist.Bar('#chart1', data1, options);
                                                         new Chartist.Bar('#chart2', data2, options);
                                                         new Chartist.Bar('#chart3', data3, options);
                                                         $("#list-posts").html(output);
                                                         $("#list-skade").html(outputSkade);
-
                                                     }
-
                                                 }
-
                                             },
                                             error: function(error) {
                                                 console.log("Query error:" + error.message);
                                             }
                                         });
-
                                 }
-
                             }
-
-
                         },
                         error: function(error) {
                             console.log("Query error:" + error.message);
                         }
                     });
-
-
             }
-
             getAnswers();
         </script>
 
