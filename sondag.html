@@ -94,7 +94,7 @@
 
             }
 
-            var klubbID;
+            var klubbID = Parse.User.current().get("team").id;
 
             function roles() {
                 klubbID = Parse.User.current().get("team").id;
