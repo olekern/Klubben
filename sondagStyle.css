@@ -2,27 +2,28 @@ html, body {
     height: 100%;
     width: 100%;
     background-color: #EDEDED;
+    
 }
 .nav {
     
-    height: 5em;
+    height: 80px;
     background: #cf2424;
     width: 100%;
    
 }
 
 .nav img{
-    height: 4em;
+    height: 50px;
     width: auto;
     float: left;
-    margin-left: 6em;
-    margin-top: 0.5em;
+    margin-left: 100px;
+    margin-top: 17px;
 }
 .nav ul {
     margin:0;
     padding:0;
     overflow: hidden;
-    margin-right: 3em;
+    margin-right: 40px;
 }
 .nav ul li {
     list-style:none;
@@ -33,24 +34,14 @@ html, body {
     text-decoration: none;
     float: right;
     display: block;
-    padding: 2.1em 1.5em;
+    padding: 32px 25px;
     color: white;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 400;
     font-size: 15px;
     letter-spacing: 1px;
 }
-.nav ul li p {
-    text-decoration: none;
-    float: right;
-    display: block;
-    padding: 1.05em 1.5em;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 15px;
-    letter-spacing: 1px;
-}
+
 .nav ul li a:hover {
     color: lightgrey;
 }
@@ -59,11 +50,11 @@ html, body {
     text-decoration: none;
     float: left;
     display: block;
-    padding: 1.1em;
-    margin-left: 5em;
+    padding: 26px;
+    margin-left: 50px;
     color: white;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 400;
     font-size: 25px;
     letter-spacing: 1px;
     
@@ -71,8 +62,7 @@ html, body {
 
 #signOut{
     font-size: 23px;
-    margin-top: -0.8em; 
-    
+    margin-top: -2px;
 }
 
 #chart1 {

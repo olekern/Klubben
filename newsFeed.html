@@ -92,18 +92,34 @@
 
 
         <script type="text/javascript">
+            
+            function show() {
+                console.log(m);
+                if (document.getElementById('comments').style.display == 'none') {
+                    document.getElementById('comments').style.display = 'block';
+                }
+                return false;
+            }
+
+            function hide() {
+                if (document.getElementById('comments').style.display == 'block') {
+                    document.getElementById('comments').style.display = 'none';
+                }
+                return false;
+            }
+            
             //Parse.initialize("wSHRpQQxW6jgmxRQV8UXogZcOiRvO8s8VoVmlMYI");
              //Parse.serverURL = 'https://klubbenheroku.herokuapp.com/parse';
             Parse.initialize("wSHRpQQxW6jgmxRQV8UXogZcOiRvO8s8VoVmlMYI", "imVCWFzFX4fVRGcqX8ioidD686IPb5ELzHd3WkJw");
             
-            function handleParseError(err) {
-  switch (err.code) {
-    case Parse.Error.INVALID_SESSION_TOKEN:
-      Parse.User.logOut();
-      location.href = "registration.html";
-      break;
-  }
-}
+        function handleParseError(err) {
+          switch (err.code) {
+            case Parse.Error.INVALID_SESSION_TOKEN:
+              Parse.User.logOut();
+              location.href = "registration.html";
+              break;
+          }
+        }
             
             var currentUserName = Parse.User.current().get("name");
             console.log(currentUserName);
@@ -135,9 +151,10 @@
                 var Query = Parse.Object.extend("data_" + klubbID + "_Members");
                 var query = new Parse.Query(Query);
                 query.find().then(function() {
-}, function(err) {
-  handleParseError(err);
-});
+                        }, function(err) {
+                handleParseError(err);
+                        });
+                
                 var outputRole = "";
                 var outputReq = "";
                 query.equalTo("user", Parse.User.current());
@@ -352,10 +369,10 @@
                                 if (author.get("profileImage_small")) {
                                     var bilde = author.get("profileImage_small");
                                     var url1 = bilde.url();
-                                    pB = "<img src='" + url1 + "'>";
+                                    pB = '<img class="pb1" src="' + url1 + '">';
                                 } else {
-                                    userPB = '<img src="./img/no-pb.png">';
-                                }
+                                    userPB = '<img class="pb1" src="./img/no-pb.png">';
+                                         }
                                 var img = "";
                                 if (results[i].get("Image")) {
                                     var file = results[i].get("Image");
@@ -414,9 +431,9 @@
                                 commentid = results[i].get("comments");
                                 if (commentid != null) {
                                     if (commentid.length == 1) {
-                                        output += "<p>" + commentid.length + " kommentar</p>";
+                                        output += '<p onclick="return show();">' + commentid.length + ' kommentar</p>';
                                     } else {
-                                        output += '<p>' + commentid.length + ' kommentarer</p>';
+                                        output += '<p onclick="return show();">' + commentid.length + ' kommentarer</p>';
                                     }
                                 } else if (commentid == undefined) {
                                     output += "<p>0 kommentarer</p>";
@@ -425,12 +442,14 @@
                                 }
                                 output += "</div>";
                                 output += "</div>";
+                                output += '<div id="all-comments">';
                                 output += '<div id="commentSection">';
                                 output += '<i class="fa fa-comment-o" id="commentIcon" aria-hidden="true"></i>';
                                 output += '<textarea rows="1" cols="40 name="text" id="text' + i + '" placeholder="Skriv en kommentar"></textarea>';
                                 output += '<button type="button" name="' + realPost + '" id="' + i + '" onclick="submitComment(id, name)">Publiser</button>';
                                 output += '</div>';
                                 commentid = results[i].get("comments");
+                                var m;
                                 if (commentid != null) {
                                     for (var i in commentid) {
                                         if (commentid[i] != null) {
@@ -441,14 +460,31 @@
                                             var ctdate = results[i].get("createdAt");
                                             var ctdato = ctdate.toString();
                                             var ctdatoen = ctdato.substring(4, 15);
-                                            output += "<div id=\"comments\">";
+                                            
+                                            var pB = "";
+                                            var userPB = "";
+                                            if (ctauth.get("profileImage_small")) {
+                                                var bilde = ctauth.get("profileImage_small");
+                                                var url1 = bilde.url();
+                                                pB = '<img class="pb" src="' + url1 + '">';
+                                            } else {
+                                                userPB = '<img class="pb" src="./img/no-pb.png">';
+                                                    }
+        
+                                            output += '<div class="comments" id="comments' + i +'">';
+                                            output += "<div id=\"profilBildeC\">";
+                                            output += pB;
+                                            output += userPB;
+                                            output += "</div>"
                                             output += "<h4>" + ctname + "</h4>";
-                                            output += "<h5>" + "Skrevet: " + ctdatoen + "</h5>";
+                                            //output += "<h5>" + ctdatoen + "</h5>";
                                             output += "<p>" + ctxt + "</p>";
                                             output += "</div>"
                                         }
                                     }
                                 }
+                                output += "</div>";
+                                
                             }
                             $("#list-posts").html(output);
                         },
