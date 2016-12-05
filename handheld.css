@@ -82,6 +82,16 @@ body{
     padding-top: 70px;
 }
 
+#sitat img{
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    margin-top: 70px;
+}
+
+
 #second h4{
     float: right;
     font-size: 12px;
@@ -113,7 +123,13 @@ body{
     margin-top: -12px;
 }
 
-#third h1{
+#third h3{
+    font-size: 23px;
+    font-weight: 100;
+    text-align: center;
+}
+
+#third h2{
     font-size: 32px;
     font-weight: 300;
     text-align: center;
