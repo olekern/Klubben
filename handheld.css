@@ -83,12 +83,7 @@ body{
 }
 
 #sitat img{
-    background-repeat: no-repeat;
-    background-position: 50%;
-    border-radius: 50%;
-    width: 140px;
-    height: 140px;
-    margin-top: 70px;
+    display: none;
 }
 
 
