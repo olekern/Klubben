@@ -162,17 +162,27 @@ html{
 
 
 #sitat{
-    width: 600px;
+    width: 800px;
     position: absolute;
-    left: 50%;
+    left: 45%;
     margin-left: -300px;
-    margin-top: 40px;
     font-weight: 300;
 }
 #sitat p{
-    font-size: 35px;
+    width: 600px;
+    font-size: 31px;
     font-weight: 200;
-    text-align: center;
+    margin-left: 200px;
+    margin-top: -150px;
+}
+
+#sitat img{
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    margin-top: 70px;
 }
 
 
