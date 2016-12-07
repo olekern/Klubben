@@ -241,7 +241,7 @@ body{
 #pun{
     float: right;
     margin-top: -20px;
-    margin-right: 50px;
+    margin-right: 30px;
 }
 
 #pun h2{
@@ -275,30 +275,33 @@ body{
 
 #eighth{
     background-color: #d0e3cc; 
-    height: 400px;
+    height: 300px;
     width: 100%;
     top: 0;
     bottom: 0;
 }
 
+#mail{
+    margin-top: -50px;
+}
 #mailIcon{
     font-size: 40px;
+    margin-right: 20px
 }
 
 #mail h5 {
-    font-size: 20px;
-    font-weight: 200;
-    margin-right: 40px;
+    font-size: 17px;
+    font-weight: 300;
+    margin-left: 100px;
     text-transform: uppercase;
-    float: right;
-    margin-top: 10px;
+    float: left;
 }
 
 
 #facebook{
     float: left;
     margin-left: 45%;
-    font-size: 45px;
+    font-size: 40px;
     text-decoration: none;
     color: black;
 }
@@ -308,14 +311,14 @@ body{
     font-size: 45px;
     text-decoration: none;
     color: black;
-    margin-left: 55%;
+    margin-left: 53%;
 }
 
 #apple svg{
     height: 61px;
     width: auto;
     float: left;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-left: 73px;
 }
 
