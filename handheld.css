@@ -290,21 +290,17 @@ body{
 
 
 #facebook{
-    float: right;
-    margin-top: -55px;
-    margin-right: 60px;
+    float: left;
     font-size: 45px;
     text-decoration: none;
     color: black;
 }
 
 #youtube{
-    float: right;
-    margin-top: -55px;
+    float: left;
     font-size: 45px;
     text-decoration: none;
     color: black;
-    margin-right: 130px;
 }
 
 #apple svg{
