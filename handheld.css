@@ -235,6 +235,7 @@ body{
 #pun{
     float: right;
     margin-top: -20px;
+    margin-right: 50px;
 }
 
 #pun h2{
@@ -265,6 +266,37 @@ body{
     display: none;
 }
 
+#mailIcon{
+    font-size: 40px;
+}
+
+#mail p {
+    font-size: 20px;
+    font-weight: 200;
+    margin-right: 40px;
+    text-transform: uppercase;
+    float: right;
+    margin-top: 10px;
+}
+
+
+#facebook{
+    float: right;
+    margin-top: -55px;
+    margin-right: 60px;
+    font-size: 45px;
+    text-decoration: none;
+    color: black;
+}
+
+#youtube{
+    float: right;
+    margin-top: -55px;
+    font-size: 45px;
+    text-decoration: none;
+    color: black;
+    margin-right: 130px;
+}
 
 
 #eighth{
