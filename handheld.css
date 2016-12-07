@@ -285,18 +285,19 @@ body{
     font-size: 40px;
 }
 
-#mail p {
+#mail h5 {
     font-size: 20px;
     font-weight: 200;
+    margin-right: 40px;
     text-transform: uppercase;
-    float: left;
-    color: black;
+    float: right;
+    margin-top: 10px;
 }
 
 
 #facebook{
     float: left;
-    margin-left: 50%;
+    margin-left: 45%;
     font-size: 45px;
     text-decoration: none;
     color: black;
@@ -307,14 +308,14 @@ body{
     font-size: 45px;
     text-decoration: none;
     color: black;
-    margin-left: 50%;
+    margin-left: 55%;
 }
 
 #apple svg{
     height: 61px;
     width: auto;
     float: left;
-    margin-top: 80px;
+    margin-top: 50px;
     margin-left: 73px;
 }
 
