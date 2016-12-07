@@ -233,7 +233,7 @@ body{
 #iosNF{
     width: 500px;
     height: auto;
-    margin-top: -65px;
+    margin-top: -55px;
     float: left;
     margin-left: -66px;
 }
@@ -290,11 +290,13 @@ body{
     font-weight: 200;
     text-transform: uppercase;
     float: left;
+    color: black;
 }
 
 
 #facebook{
     float: left;
+    margin-left: 50%;
     font-size: 45px;
     text-decoration: none;
     color: black;
@@ -305,13 +307,14 @@ body{
     font-size: 45px;
     text-decoration: none;
     color: black;
+    margin-left: 50%;
 }
 
 #apple svg{
     height: 61px;
     width: auto;
     float: left;
-    margin-top: 20px;
+    margin-top: 80px;
     margin-left: 73px;
 }
 
