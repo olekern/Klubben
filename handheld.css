@@ -74,6 +74,9 @@ body{
     border-right: 0;
 }
 
+#sitat img{
+    display: none;
+}
 #sitat p{
     font-size: 20px;
     font-weight: 200;
