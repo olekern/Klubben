@@ -66,7 +66,7 @@ body{
 
 #second{
     width: 100%;
-    height: 230px;
+    height: 220px;
     background-color: white;
     right: 0;
     margin-right: 0;
@@ -97,7 +97,7 @@ body{
 
 #third{
     width: 100%;
-    height: 770px;
+    height: 790px;
     background-color: #ffc857;
     right: 0;
     margin-right: 0;
@@ -150,7 +150,7 @@ body{
 #statsios{
     width: 90%;
     height: auto;
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 30px;
     text-align: center;
     margin-left: auto;
@@ -238,13 +238,13 @@ body{
 }
 
 #pun h2{
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
     margin-top: 49px;
 }
 #sign {
     width: 45px;
-    font-size: 45px;
+    font-size: 40px;
     float: left;
     padding-top: -15px;
     margin-left: 25px;
@@ -261,18 +261,11 @@ body{
 #topFoot{
     display: none;
 }
-#contactInf{
+#register{
     display: none;
 }
-#topFoot{
-    display: none;
-}
-#topFoot{
-    display: none;
-}
-#topFoot{
-    display: none;
-}
+
+
 
 #eighth{
     background-color: #d0e3cc; 

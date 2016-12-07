@@ -162,35 +162,23 @@ html{
 
 
 #sitat{
-    width: 800px;
-    position: absolute;
-    left: 42%;
-    margin-left: -300px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 300;
+    text-align: center;
+    padding-top: 30px;
 }
 #sitat p{
-    width: 600px;
     font-size: 31px;
     font-weight: 200;
-    margin-left: 220px;
-    margin-top: -150px;
 }
-
-#sitat img{
-    background-repeat: no-repeat;
-    background-position: 50%;
-    border-radius: 50%;
-    width: 140px;
-    height: 140px;
-    margin-top: 70px;
-}
-
 
 #second h4{
     float: right;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 300;
-    margin-top: 250px;
+    margin-top: 1px;
     margin-right: 25px;
 }
 
