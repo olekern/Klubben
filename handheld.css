@@ -241,7 +241,7 @@ body{
 #pun{
     float: right;
     margin-top: -20px;
-    margin-right: 30px;
+    margin-right: 10px;
 }
 
 #pun h2{
@@ -282,17 +282,17 @@ body{
 }
 
 #mail{
-    margin-top: -50px;
+    margin-top: -100px;
 }
 #mailIcon{
     font-size: 40px;
-    margin-right: 20px
+    margin-left: 20px
 }
 
 #mail h5 {
     font-size: 17px;
-    font-weight: 300;
-    margin-left: 100px;
+    font-weight: 400;
+    margin-left: 10px;
     text-transform: uppercase;
     float: left;
 }
@@ -300,7 +300,7 @@ body{
 
 #facebook{
     float: left;
-    margin-left: 45%;
+    margin-left: 40%;
     font-size: 40px;
     text-decoration: none;
     color: black;
@@ -311,7 +311,7 @@ body{
     font-size: 45px;
     text-decoration: none;
     color: black;
-    margin-left: 53%;
+    margin-left: 55%;
 }
 
 #apple svg{
