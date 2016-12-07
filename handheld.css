@@ -66,7 +66,7 @@ body{
 
 #second{
     width: 100%;
-    height: 210px;
+    height: 200px;
     background-color: white;
     right: 0;
     margin-right: 0;
@@ -79,7 +79,7 @@ body{
     font-weight: 200;
     text-align: center;
     color: black;
-    padding-top: 70px;
+    padding-top: 50px;
 }
 
 #sitat img{
@@ -275,10 +275,8 @@ body{
 #mail p {
     font-size: 20px;
     font-weight: 200;
-    margin-right: 40px;
     text-transform: uppercase;
-    float: right;
-    margin-top: 10px;
+    float: left;
 }
 
 
