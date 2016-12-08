@@ -302,7 +302,8 @@ body{
 
 
 #facebook{
-    text-align: center;
+    margin-left: 45%;
+    margin-top: 20px;
     font-size: 40px;
     text-decoration: none;
     color: black;
