@@ -275,7 +275,7 @@ body{
 
 #eighth{
     background-color: #d0e3cc; 
-    height: 320px;
+    height: 330px;
     width: 100%;
     top: 0;
     bottom: 0;
@@ -302,22 +302,19 @@ body{
 
 
 #facebook{
-    float: left;
     margin-left: 30%;
     font-size: 40px;
     text-decoration: none;
     color: black;
-    padding-top: 40px;
+    padding-top: 10px;
 }
 
 #youtube{
-    float: left;
     font-size: 45px;
     text-decoration: none;
     color: black;
     margin-left: 65%;
-    position: relative;
-    display: inline;
+    margin-top: -20px;
 }
 
 #apple svg{
