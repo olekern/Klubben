@@ -302,19 +302,14 @@ body{
 
 
 #facebook{
-    margin-left: 30%;
+    margin-left: 50%;
     font-size: 40px;
     text-decoration: none;
     color: black;
 }
 
 #youtube{
-    font-size: 45px;
-    text-decoration: none;
-    color: black;
-    margin-left: 65%;
-    position: absolute;
-    margin-top: -50px;
+    display: none
 }
 
 #apple svg{
