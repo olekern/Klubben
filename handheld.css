@@ -275,7 +275,7 @@ body{
 
 #eighth{
     background-color: #d0e3cc; 
-    height: 300px;
+    height: 320px;
     width: 100%;
     top: 0;
     bottom: 0;
@@ -297,6 +297,7 @@ body{
     text-transform: uppercase;
     float: left;
     margin-left: 50px;
+    margin-top: 5px;
 }
 
 
