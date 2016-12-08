@@ -286,7 +286,7 @@ body{
 }
 #mailIcon{
     font-size: 40px;
-    margin-left: 0px;
+    margin-left: 20px;
     margin-top: 15px;
 }
 
@@ -297,7 +297,7 @@ body{
     text-transform: uppercase;
     float: left;
     margin-left: 80px;
-    margin-top: -2px;
+    margin-top: -10px;
 }
 
 
@@ -316,7 +316,7 @@ body{
     text-decoration: none;
     color: black;
     margin-left: 65%;
-    margin-top: -20px;
+    margin-top: -25x;
 }
 
 #apple svg{
