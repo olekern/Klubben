@@ -297,7 +297,7 @@ body{
     text-transform: uppercase;
     float: left;
     margin-left: 50px;
-    margin-top: 7px;
+    margin-top: 10px;
 }
 
 
@@ -316,7 +316,7 @@ body{
     text-decoration: none;
     color: black;
     margin-left: 65%;
-    margin-top: -40px;
+    margin-top: -80px;
 }
 
 #apple svg{
