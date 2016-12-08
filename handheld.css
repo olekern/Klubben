@@ -302,14 +302,14 @@ body{
 
 
 #facebook{
-    text-display: center;
+    text-align: center;
     font-size: 40px;
     text-decoration: none;
     color: black;
 }
 
 #youtube{
-    display: none
+    display: none;
 }
 
 #apple svg{
