@@ -316,7 +316,8 @@ body{
     text-decoration: none;
     color: black;
     margin-left: 65%;
-    position: absolute;
+    position: relative;
+    display: inline;
     margin-top: -20px;
 }
 
