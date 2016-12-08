@@ -282,12 +282,11 @@ body{
 }
 
 #mail{
-    margin-top: -17px;
+    margin-top: -20px;
 }
 #mailIcon{
     font-size: 40px;
     margin-left: 20px;
-    margin-top: 10px;
     float: left;
 }
 
@@ -298,7 +297,6 @@ body{
     text-transform: uppercase;
     float: left;
     margin-left: 50px;
-    margin-top: 10px;
 }
 
 
@@ -308,7 +306,7 @@ body{
     font-size: 40px;
     text-decoration: none;
     color: black;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 #youtube{
@@ -317,6 +315,7 @@ body{
     text-decoration: none;
     color: black;
     margin-left: 65%;
+    margin-top: -20px;
 }
 
 #apple svg{
