@@ -202,18 +202,19 @@ html{
 
 #second{
     width: 100%;
-    height: 280px;
+    height: 250px;
     background-color: white;
 }
 
 
 #sitat{
-    width: 800px;
-    margin-left: 250px;
+    width: 950px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 300;
     text-align: center;
-    padding-top: 30px;
-    background-color: white;
+    margin-top: 50px;
 }
 
 #sitat img{
@@ -222,15 +223,17 @@ html{
     border-radius: 50%;
     width: 130px;
     height: 130px;
-    margin-top: 40px;
-    margin-left: 50px;
     float: left;
+    margin-left: 100px;
+    margin-top: 35px;
 }
 #sitat p{
     font-size: 30px;
     font-weight: 200;
-    width: 600px;
-    margin-left: 200px;
+    width: 550px;
+    line-height: 33px;
+    float: left;
+    margin-left: 30px;
     margin-top: 35px;
 }
 
@@ -238,12 +241,12 @@ html{
     float: right;
     font-size: 20px;
     font-weight: 300;
-    margin-top: 1px;
+    margin-top: 18px;
     margin-right: 25px;
 }
 
 .content{
-    width: 1100px;
+    width: 900px;
     margin-left: auto;
     margin-right: auto;
     
@@ -251,45 +254,47 @@ html{
 
 #third{
     width: 100%;
-    height: 600px;
+    height: 650px;
     background-color: #ffc857;
 }
 
 
 #third img{
-    width: 550px;
+    width: 330px;
     height: auto;
-    margin-right: -100px;
-    margin-top: 20px;
     float: right;
+    margin-top: 5px;
 }
 
 #text{
-    float: left;
     height: 400px;
-    width: 200px;
-    margin-top: 100px;
-    margin-left: 160px;
+    width: 350px;
+    float: left;
+    margin-top: 130px;
+    margin-left: 60px;
 }
 
 #third h3{
-    font-size: 23px;
+    font-size: 26px;
     font-weight: 100;
+    line-height: 33px;
 }
 
 #third h2{
     width: 400px;
     font-size: 45px;
     font-weight: 300;
-    margin-top: -7px;
+    line-height: 49px;
+    margin-top: 13px;
 }
 
 #third p{
     width: 350px;
-    font-size: 25px;
+    font-size: 29px;
     font-weight: 200;
+    line-height: 30px;
     margin-left: 5px;
-    margin-top: -13px;
+    margin-top: 17px;
 
 }
 
@@ -313,43 +318,56 @@ html{
     background-color: #eafdf8;
 }
 
+#topstat{
+    height: 950px;
+}
+
+#iosStat{
+    width: 330px;
+    height: auto;
+    float: left;
+    margin-top: 15px;
+}
+
 #statsios{
     width: 400px;
-    height: 300px;
-    padding-top: 100px;
     float: right;
-    margin-right: 100px;
-    padding-bottom: 30px;
+    margin-right: 90px;
+    margin-top: 120px;
 }
 
 #statsios h3{
     font-size: 23px;
     font-weight: 100;
     padding-top: 10px;
+    line-height: 33px;
 }
 
 #statsios h2{
     font-size: 40px;
     font-weight: 300;
-    margin-top: -10px;
+    margin-top: 13px;
+    line-height: 49px;
 }
 
 #statsios p{
     font-size: 24px;
     font-weight: 200;
+    line-height: 30px;
+    margin-top: 17px;
 }
 
 #statsmac{
-    float: left;
-    padding-top: 600px;
-    margin-left: -400px;
     width: 300px;
+    height: 70px;
+    position: absolute;
+    margin-top: 700px;
+    margin-left: 40px;
 }
 
 #chart{
     font-size: 60px;
     float: left;
-    margin-top: 100px;
 }
 
 #statsmac h2{
@@ -357,43 +375,33 @@ html{
     font-size: 27px;
     font-weight: 400;
     width: 200px;
-    margin-top: 100px;
-    margin-left: 100px;
+    float: right;
+
 }
-
-
-#iosStat{
-    height: 550px;
-    width: auto;
-    float: left;
-    margin-top: 15px;
-}
-
 
 #macStat{
-    height: 600px;
-    width: auto;
+    width: 600px;
+    height: auto;
     float: right;
-    margin-right: -20px;
-    margin-top: -140px;
+    margin-top: -100px;
+    
 }
 
 #sixth{
-    height: 600px;
+    height: 650px;
     width: 100%;
     background-color: #d0e3cc;
 }
 
 #iosNF{
-    height: 600px;
+    height: 650px;
     width: auto;
-    margin-top: -70px;
-    
 }
 
 #information{
     width: 500px;
     float: right;
+    margin-top: 90px;
 }
 
 #pun{
@@ -418,15 +426,6 @@ html{
     margin-top: 40px;
 }
 
-#androidApp{
-    height: 100px;
-    width: auto;
-
-    float: right;
-    margin-left: 10px; 
-    
-}
-
 #seventh{
     height: 500px;
     width: 100%;
@@ -441,20 +440,25 @@ html{
     padding: none;
 }
 
+#freeText{
+    height: 200px;
+    width: 300px;
+    margin-top: 130px;
+    margin-left: 200px;
+}
 #free h2{
-    padding-top: 130px;
     font-size: 25px;
     font-weight: 100;
     color: white;
-    margin-left: 150px;
+    line-height: 33px;
 }
 
 #free h1{
     font-size: 40px;
     font-weight: 400;
     color: white;
-    padding-bottom: 20px;
-    margin-left: 150px;
+    line-height: 49px;
+    margin-top: 10px;
 }
 
 #free a {
@@ -464,7 +468,8 @@ html{
     color: white;
     font-weight: 200;
     font-size: 20px;
-    margin-left: 150px;
+    position: absolute;
+    margin-top: 20px;
 }
 
 #pricing{
@@ -476,21 +481,24 @@ html{
 }
 
 #eighth{
-    padding-top: 50px;
     width: 100%;
-    height: 910px;
+    height: 920px;
     background-color: white;
 }
 
 #topFoot{
-    height: 180px;
+    height: 130px;
     border-bottom: 1px solid black;
+}
+
+#topFootContent{
+    height: 110px;
+    margin-top: 25px;
 }
 
 #topFoot img{
     height: 110px;
     width: auto;
-    margin-top: 20px;
     margin-left: 60px;
 }
 
@@ -573,6 +581,10 @@ select::-ms-expand { /* for IE 11 */
     border-bottom: 1px solid black;
 }
 
+#phonecontact{
+    height: 50px;
+}
+
 #mail{
     margin-top: 20px;
     width: 380px;
@@ -592,30 +604,37 @@ select::-ms-expand { /* for IE 11 */
     margin-top: 10px;
 }
 
+#social{
+    height: 50px; 
+    width: 140px;
+    float: right;
+    margin-top: -45px;
+}
 
 #facebook{
-    float: right;
-    margin-top: -55px;
-    margin-right: 60px;
     font-size: 45px;
     text-decoration: none;
     color: black;
+    margin-left: 20px;
 }
 
 #youtube{
-    float: right;
-    margin-top: -55px;
     font-size: 45px;
     text-decoration: none;
     color: black;
-    margin-right: 130px;
+    float: right;
+    margin-right: 10px; 
+}
+
+#register{
+    height: 500px;
 }
 
 #registerTeam{
     width: 300px;
     float: left;
-    margin-left: 90px;
-    margin-top: 30px;
+    margin-top: 40px;
+    margin-left: 70px;
 }
 
 #registerTeam h3{
@@ -624,17 +643,10 @@ select::-ms-expand { /* for IE 11 */
 }
 
 #fakturering{
-    float: right;
-    margin-right: 350px;
-    width: 200px;
-    margin-top: 30px;
-}
-
-#globe2{
     float: left;
-    font-size: 30px;
-    margin-right: 230px;
-    margin-top: -5px;
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 40px;
 }
 
 #list-teams{
@@ -697,13 +709,14 @@ select::-ms-expand { /* for IE 11 */
 }
 
 #btmInv{
-    width: 1100px;
-    padding-top: 400px;
+    height: 100px;
+    float: left;
+    margin-top: 90px;
+    width: 100%;
 }
 
 #product{
-    width: 1100px;
-    height: 40px;
+    height: 25px;
 }
 
 #product h3{
@@ -711,63 +724,66 @@ select::-ms-expand { /* for IE 11 */
     font-weight: 400;
 }
 
-#product h4{
-    float: left;
-    margin-left: 600px;
-    margin-top: -47px;
+#linePrice{
+    height: 25px; 
+    width: 65px;
+    margin-left: 370px;
+    margin-top: -21px;
+}
+
+#linePrice h4{
     font-size: 22px;
     font-weight: 300;
 }
 
 #line{
-    width: 50px;
+    width: 60px;
+    height: 1px;
     float: left;
-    margin-left: 500px;
-    margin-top: -34px;
-    border-bottom: 1px solid grey;
+    background-color: grey;
+    margin-top: -10px;
 }
 
 #node-id{
     float: right;
+    height: 25px;
+    width: 260px;
+    margin-top: -21px;
 }
 
 #node-id h6{
     font-size: 19px;
     font-weight: 300;
-    margin-right: 210px;
-    margin-top: -45px;
     color: grey;
+    float: left;
 }
 
 #node-id h5{
     font-size: 19px;
     font-weight: 300;
     color: grey;
-    float: right;
-    margin-top: -69px;
-    margin-right: 97px;
+    float: left;
+    margin-left: 5px;
+}
+
+#sendForm{
+    height: 50px;
+    margin-top: 40px;
 }
 
 #terms{
     float: left;
-    margin-left: -655px;
-    margin-top: 91px;
 }
 
 #termh{
     float: left;
-    margin-left: 40px;
-    margin-top: 80px;
+    margin-left: 10px;
     font-size: 16px;
     font-weight: 400;
 }
 
 #termHref{
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 80px;
     margin-left: 4px;
-    float: left;
 }
 
 #product p{
@@ -781,12 +797,11 @@ select::-ms-expand { /* for IE 11 */
 
 #register button{
     float: right;
-    margin-top: 60px;
-    margin-right: -327px;
     font-size: 18px;
     font-weight: 400;
     height: 45px;
     width: 100px;
+    margin-right: 90px;
     background-color: white;
     color: black;
     border: 1px solid black;
@@ -805,32 +820,38 @@ select::-ms-expand { /* for IE 11 */
     float: left;
     width: 550px;
 }
+
+#btmFoot{
+    height: 150px;
+}
+#store{
+    height: 100px;
+    width: 500px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
 #apple svg{
     height: 61px;
     width: auto;
-    float: left;
-    margin-top: -95px;
-    margin-right: 600px;
+    margin-right: 40px;
+    margin-top: 15px;
 }
 
 #android{
     height: 91px;
     width: auto;
-    float: left;
-    margin-top: -110px;
-    margin-right: 300px;
+    margin-left: -40px;
 }
 
 
 #btmFoot p{
-    margin-top: 170px;
 }
 
 #btmFoot a{
     float: right;
     text-decoration: none;
     color: black;
-    margin-top: -32px;
 }
 
 #btmFoot a:hover{

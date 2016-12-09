@@ -21,13 +21,7 @@
     </head>
 
     <body>
-
-        <div class="nav">
-            <img src="./img/Ikon.png">
-             <a class="navn" href="index.html">Klubben</a>
-             <a class="app" id="topApp" onclick="getLink()">Gå til appen</a>
-        </div>
-
+        
         <script type="text/javascript">
             //Parse.initialize("wSHRpQQxW6jgmxRQV8UXogZcOiRvO8s8VoVmlMYI");
              //Parse.serverURL = 'https://klubbenheroku.herokuapp.com/parse';
@@ -45,6 +39,12 @@
             }
 
         </script>
+        
+        <div class="nav">
+            <img src="./img/Ikon.png">
+             <a class="navn" href="index.html">Klubben</a>
+             <a class="app" id="topApp" onclick="getLink()">Gå til appen</a>
+        </div>
 
         <div id="first">
 
@@ -61,7 +61,7 @@
         <div id="second">
             <div id="sitat">
                 <img src="./img/roger.jpg">
-                <p>"Alle spillere trenger å bli sett. Klubben er et fantastisk verktøy for å kunne følge opp den enkelte spiller på en enkel, men samtidig inspirerende måte."</p>
+                <p>"Alle spillere trenger å bli sett. Klubben er en fantastisk app for å kunne følge opp den enkelte spiller på en enkel, men samtidig inspirerende måte."</p>
             </div>
              <h4>- Roger Finjord</h4>
         </div>
@@ -71,9 +71,9 @@
                 <img src="./img/androidRep.png">
                 <div id="text">
                     <h3>Intern kommunikasjon</h3>
-                 <h2>Gi individuelle tilbakemeldinger</h2>
-                <p>Lag undersøkelser, få rapporter og styrk kommunikasjonen mellom trener og spiller ved hjelp av Klubben.</p>
-                    </div>
+                    <h2>Gi individuelle tilbakemeldinger</h2>
+                    <p>Lag undersøkelser, få rapporter og styrk kommunikasjonen mellom trener og spiller ved hjelp av Klubben.</p>
+                </div>
             </div>
         </div>
         
@@ -87,17 +87,19 @@
 
         <div id="fifth">
             <div class="content">
-                <img id="iosStat" src="./img/iosstat.png">
-                <div id="statsios">
-                     <h3>Raskt og enkelt</h3>
-                     <h2>Kunnskap er nøkkelen til suksess  </h2>
-                    <p>Enkelt tilgjengelig hvor enn du er, med mobilen i hånden får du statistikk som gir deg full kontroll over dine spillere.</p>
-                </div>
+                <div id="topstat">
+                    <img id="iosStat" src="./img/iosstat.png">
+                    <div id="statsios">
+                         <h3>Raskt og enkelt</h3>
+                         <h2>Kunnskap er nøkkelen til suksess  </h2>
+                        <p>Enkelt tilgjengelig hvor enn du er, med mobilen i hånden får du statistikk som gir deg full kontroll over dine spillere.</p>
+                    </div>
                 <div id="statsmac">
                      <i class="fa fa-bar-chart" id="chart" aria-hidden="true"></i>
                      <h2>Sammenligne resultater</h2>
                 </div>
                 <img id="macStat" src="./img/macbookpro.png">
+            </div>
             </div>
         </div>
 
@@ -123,9 +125,11 @@
 
         <div id="seventh">
                 <div id="free">
-                     <h2>Test ut appens funksjonalitet</h2>
-                     <h1>Prøv gratis i 30 dager</h1>
-                     <a href="#facebook">Registrer ditt lag</a>
+                    <div id="freeText">
+                         <h2>Test ut appens funksjonalitet</h2>
+                         <h1>Prøv gratis i 30 dager</h1>
+                         <a href="#facebook">Registrer ditt lag</a>
+                    </div>
                 </div>
 
             <div id="pricing">
@@ -136,15 +140,17 @@
         <div id="eighth">
             <div class="content">
                 <div id="topFoot">
-                    <img src="./img/Icon-black.png">
-                     <a class="app" id="btmApp" onclick="getLink()">Logg inn</a>
-                     <i class="fa fa-globe" id="globe" aria-hidden="true"></i>
-                    <select name="language" class="language" id="changeLanguage">
-                        <option value="EN">English</option>
-                        <option value="FR">French</option>
-                        <option value="NO" selected>Norsk Bokmål</option>
-                    </select>
-                     <i class="fa fa-caret-down" id="triangle" aria-hidden="true"></i>
+                    <div id="topFootContent">
+                        <img src="./img/Icon-black.png">
+                         <a class="app" id="btmApp" onclick="getLink()">Logg inn</a>
+                         <i class="fa fa-globe" id="globe" aria-hidden="true"></i>
+                        <select name="language" class="language" id="changeLanguage">
+                            <option value="EN">English</option>
+                            <option value="FR">French</option>
+                            <option value="NO" selected>Norsk Bokmål</option>
+                        </select>
+                         <i class="fa fa-caret-down" id="triangle" aria-hidden="true"></i>
+                    </div>
                 </div>
                 <div id="contactInf">
                     <div id="phonecontact">
@@ -153,9 +159,11 @@
 
                         <h5>contact@klubbenapp.com</h5>
                     </div>
-                    <a href="https://www.facebook.com/klubbenapp/" class="fa fa-facebook" id="facebook" aria-hidden="true"></a>
-                    <a href="https://www.youtube.com/channel/UCGCVwyMl7CeAreC3Osupsdg" class="fa fa-youtube-play" id="youtube" aria-hidden="true"></a>
+                        <div id="social">
+                            <a href="https://www.facebook.com/klubbenapp/" class="fa fa-facebook" id="facebook" aria-hidden="true"></a>
+                            <a href="https://www.youtube.com/channel/UCGCVwyMl7CeAreC3Osupsdg" class="fa fa-youtube-play" id="youtube" aria-hidden="true"></a>
                         </div>
+                     </div>
 
                     <div id="register">
                         <div id="registerTeam">
@@ -180,17 +188,17 @@
                         <div id="btmInv">
                             <div id="product">
                                  <h3>Abonnement Klubben 30 dager</h3>
-                                <div id="line"></div>
-                                <p>250 kr</p>
-                                 <h4>Gratis</h4>
+                                <div id="linePrice">
+                                    <h4>Gratis</h4>
+                                    <div id="line"></div>
+                                </div>
                                 <div id="node-id"></div>
                             </div>
-
-                            <input id="terms" name="terms" type="checkbox"/>
-                             <h5 id="termh">Jeg har lest og godtatt</h5>
-                             <a href="buyTerms.html" id="termHref">vilkårene for Klubben</a>
-
-                            <button onclick="getInfo()">Registrer</button>
+                            <div id="sendForm">
+                                    <input id="terms" name="terms" type="checkbox"/>
+                                     <h5 id="termh">Jeg har lest og godtatt<span><a href="buyTerms.html" id="termHref">vilkårene for klubben</a></span></h5>
+                                <button onclick="getInfo()">Registrer</button>
+                            </div>
                         </div>
 
                     </div>
@@ -199,6 +207,7 @@
 
 
                 <div id="btmFoot">
+                    <div id="store">
                     <a href="https://itunes.apple.com/no/app/klubben/id1101856959?l=nb&mt=8" id="apple">
                         <svg version="1.1" id="US_UK_Download_on_the" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 x="0px" y="0px" width="135px" height="40px" viewBox="0 0 135 40" enable-background="new 0 0 135 40" xml:space="preserve">
@@ -330,6 +339,7 @@
                     <a href="https://play.google.com/store/apps/details?id=com.lustek.klubben">
                         <img src="./img/googlePlay.png" id="android" />
                     </a>
+                        </div>
 
                     <p>&copy 2016 Lustek AS</p>
                 </div>
