@@ -127,7 +127,7 @@ body{
 
 #text{
     float: left;
-    margin-top: 42px;
+    margin-top: 130px;
 }
 
 #third h3{
@@ -191,8 +191,7 @@ body{
 
 #statsmac{
     float: left;
-    padding-top: 600px;
-    margin-left: -400px;
+    padding-top: 200px;
     width: 100px;
 }
 
