@@ -245,8 +245,9 @@ body{
 }
 
 #information{
-    margin-left: 170px;
-    padding-top: 80px;
+    float: right;
+    margin-right: 170px;
+    padding-top: 160px;
 }
 #sign {
     width: 45px;
@@ -313,8 +314,7 @@ body{
 
 
 #facebook{
-    margin-left: 45%;
-    margin-top: 20px;
+    margin-left: 100px;
     font-size: 40px;
     text-decoration: none;
     color: black;
@@ -325,11 +325,11 @@ body{
 }
 
 #apple svg{
-    height: 61px;
+    height: 81px;
     width: auto;
     float: left;
     margin-top: 10px;
-    margin-left: 73px;
+    margin-left: 20%;
 }
 
 #android{
