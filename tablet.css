@@ -191,9 +191,9 @@ body{
 
 #statsmac{
     float: left;
-    padding-top: 200px;
+    padding-top: 180px;
     width: 100px;
-    margin-left: -350px;
+    margin-left: -270px;
 }
 
 #chart{
@@ -223,7 +223,7 @@ body{
     width: 380px;
     height: auto;
     float: right;
-    margin-top: -400px;
+    margin-top: -200px;
 }
 
 #sixth{
