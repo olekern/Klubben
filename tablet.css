@@ -326,11 +326,11 @@ body{
 }
 
 #apple svg{
-    height: 100px;
+    height: 60px;
     width: auto;
     float: right;
     margin-top: 30px;
-    margin-right: 100px;
+    margin-right: 60px;
 }
 
 #android{
