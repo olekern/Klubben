@@ -213,7 +213,7 @@ body{
     width: 380px;
     height: auto;
     float: left;
-    margin-top: -50px;
+    margin-top: -35px;
 }
 
 #sixth{
@@ -234,17 +234,6 @@ body{
     margin-left: 55px;
 }
 
-#pun{
-    float: right;
-    margin-top: -20px;
-    margin-right: 10px;
-}
-
-#pun h2{
-    font-size: 15px;
-    font-weight: 400;
-    margin-top: 49px;
-}
 #sign {
     width: 45px;
     font-size: 40px;
@@ -255,6 +244,18 @@ body{
 
 #inbox, #map, #slider{
     margin-top: 20px;
+}
+
+#pun{
+    float: left;
+    margin-top: -22px;
+    margin-left: 30px;
+}
+
+#pun h2{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 49px;
 }
 
 #seventh{
