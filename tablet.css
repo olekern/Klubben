@@ -243,17 +243,6 @@ body{
     float: left;
 }
 
-#pun{
-    float: right;
-    margin-top: -20px;
-    margin-right: 10px;
-}
-
-#pun h2{
-    font-size: 15px;
-    font-weight: 400;
-    margin-top: 49px;
-}
 #sign {
     width: 45px;
     font-size: 40px;
@@ -264,6 +253,18 @@ body{
 
 #inbox, #map, #slider{
     margin-top: 20px;
+}
+
+#pun{
+    float: left;
+    margin-top: -20px;
+    margin-left: 10px;
+}
+
+#pun h2{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 49px;
 }
 
 #seventh{
