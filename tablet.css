@@ -192,7 +192,7 @@ body{
 
 #statsmac{
     float: left;
-    padding-top: 120px;
+    padding-top: 320px;
     width: 100px;
     margin-left: -270px;
 }
@@ -330,7 +330,7 @@ body{
     height: 60px;
     width: auto;
     float: right;
-    margin-top: 50px;
+    margin-top: 70px;
     margin-right: 60px;
 }
 
@@ -338,7 +338,7 @@ body{
     height: 91px;
     width: auto;
     float: left;
-    margin-top: -25px;
+    margin-top: -3px;
     margin-left: 140px;
 }
 #eighth p{
