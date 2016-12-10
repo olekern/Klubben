@@ -117,6 +117,7 @@ body{
     margin-right: 0;
     padding-right: 0;
     border-right: 0;
+    width: 300px;
 }
 
 #third img{
@@ -149,7 +150,6 @@ body{
     font-weight: 200;
     text-align: center;
     margin-top: -10px;
-    width: 250px;
 
 }
 
