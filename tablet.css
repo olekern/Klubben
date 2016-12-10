@@ -126,8 +126,9 @@ body{
 }
 
 #text{
-    float: left;
+    float: right;
     margin-top: 130px;
+    margin-right: 60px;
 }
 
 #third h3{
@@ -337,7 +338,7 @@ body{
     height: 91px;
     width: auto;
     float: left;
-    margin-top: -100px;
+    margin-top: -50px;
     margin-left: 140px;
 }
 #eighth p{
