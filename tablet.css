@@ -193,6 +193,7 @@ body{
     float: left;
     padding-top: 200px;
     width: 100px;
+    margin-left: -150px;
 }
 
 #chart{
@@ -221,7 +222,9 @@ body{
 #macStat{
     width: 380px;
     height: auto;
-    float: left;
+    float: right;
+    margin-top: -200px;
+    margin-right: 100px;
 }
 
 #sixth{
