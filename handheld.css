@@ -110,11 +110,9 @@ body{
 }
 
 #third img{
-    width: 400px;
+    width: 300px;
     height: auto;
     float: left;
-    margin-left: -68px;
-    margin-top: -10px
 }
 
 #text{
@@ -204,10 +202,9 @@ body{
 
 
 #iosStat{
-    width: 400px;
+    width: 300px;
     height: auto;
     float: left;
-    margin-left: -70px;
 }
 
 
@@ -215,8 +212,6 @@ body{
     width: 380px;
     height: auto;
     float: left;
-    margin-left: -12px;
-    margin-top: -100px;
 }
 
 #sixth{
@@ -231,11 +226,9 @@ body{
 }
 
 #iosNF{
-    width: 400px;
+    width: 300px;
     height: auto;
-    margin-top: -55px;
     float: left;
-    margin-left: -66px;
 }
 
 #pun{
