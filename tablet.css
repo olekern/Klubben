@@ -154,7 +154,7 @@ body{
 
 #fifth{
     width: 100%;
-    height: 740px;
+    height: 760px;
     background-color: #eafdf8;
     right: 0;
     margin-right: 0;
@@ -245,8 +245,8 @@ body{
 }
 
 #information{
-    margin-left: 150px;
-    padding-top: 100px;
+    margin-left: 170px;
+    padding-top: 80px;
 }
 #sign {
     width: 45px;
