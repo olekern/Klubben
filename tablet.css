@@ -164,7 +164,7 @@ body{
 }
 
 #statsios{
-    width: 90%;
+    width: 400px;
     height: auto;
     padding-top: 80px;
     padding-bottom: 30px;
@@ -192,7 +192,7 @@ body{
 
 #statsmac{
     float: left;
-    padding-top: 100px;
+    padding-top: 120px;
     width: 100px;
     margin-left: -270px;
 }
@@ -221,7 +221,7 @@ body{
 
 
 #macStat{
-    width: 380px;
+    width: 400px;
     height: auto;
     float: right;
     margin-top: 80px;
