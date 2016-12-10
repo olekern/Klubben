@@ -223,11 +223,11 @@ body{
     width: 380px;
     height: auto;
     float: right;
-    margin-top: -200px;
+    margin-top: -70px;
 }
 
 #sixth{
-    height: 745px;
+    height: 645px;
     right: 0;
     margin-right: 0;
     padding-right: 0;
@@ -243,6 +243,10 @@ body{
     float: left;
 }
 
+#information{
+    margin-top: 200px;
+    margin-left: 40px;
+}
 #sign {
     width: 45px;
     font-size: 40px;
@@ -281,7 +285,7 @@ body{
 
 #eighth{
     background-color: #d0e3cc; 
-    height: 330px;
+    height: 230px;
     width: 100%;
     top: 0;
     bottom: 0;
