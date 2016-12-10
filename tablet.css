@@ -89,7 +89,7 @@ body{
     width: 100px;
     height: 100px;
     float: left;
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 #sitat p{
@@ -193,7 +193,7 @@ body{
     float: left;
     padding-top: 200px;
     width: 100px;
-    margin-left: -150px;
+    margin-left: -350px;
 }
 
 #chart{
@@ -223,8 +223,7 @@ body{
     width: 380px;
     height: auto;
     float: right;
-    margin-top: -200px;
-    margin-right: 100px;
+    margin-top: -400px;
 }
 
 #sixth{
@@ -303,7 +302,7 @@ body{
     text-transform: uppercase;
     float: left;
     margin-left: 30px;
-    margin-top: 13px;
+    margin-top: 9px;
 }
 
 
