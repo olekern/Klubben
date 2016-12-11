@@ -732,8 +732,9 @@ select::-ms-expand { /* for IE 11 */
 }
 
 #linePrice h4{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 300;
+    color: grey;
 }
 
 #line{
@@ -744,11 +745,19 @@ select::-ms-expand { /* for IE 11 */
     margin-top: -10px;
 }
 
+#product h5{
+    font-size: 22px;
+    font-weight: 300;
+    float: left;
+    margin-left: 480px;
+    margin-top: -27px;
+}
+
 #node-id{
     float: right;
     height: 25px;
     width: 260px;
-    margin-top: -21px;
+    margin-top: -25px;
 }
 
 #node-id h6{
@@ -764,6 +773,7 @@ select::-ms-expand { /* for IE 11 */
     color: grey;
     float: left;
     margin-left: 5px;
+    margin-top: 0px;
 }
 
 #sendForm{
