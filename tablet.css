@@ -59,11 +59,6 @@ body{
     
 }
 
-.content{
-    width: 400px;
-    background-color: yellow;
-}
-
 #first{
     display: none;
 }
